@@ -1,0 +1,19 @@
+# specific files
+
+# directories for this project
+__pycache__/
+working/
+dist/
+
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Environments
+.venv
+
+# PyCharm64 config files
+.idea/
