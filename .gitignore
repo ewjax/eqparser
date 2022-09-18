@@ -1,4 +1,6 @@
 # specific files
+pre-commit.bat
+
 
 # directories for this project
 __pycache__/
