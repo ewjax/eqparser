@@ -30,7 +30,7 @@ libs.clean:
 
 # exe make targets ###########################
 exe: libs
-	pyinstaller --onefile --icon data/icons/diamond.ico $(PACKAGE).py
+	pyinstaller --onefile $(PACKAGE).py
 
 exe.clean: libs.clean
 	rm -rfd build
@@ -53,7 +53,7 @@ install.clean: exe.clean
 
 # zip make targets ###########################
 zip: install
-	cd dist && zip -r $(PACKAGE).zip * -x $(PACKAGE).ini
+	cd dist && zip -r $(PACKAGE).zip *
 
 zip.clean:
 	rm dist/$(PACKAGE).zip
