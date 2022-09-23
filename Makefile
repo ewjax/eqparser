@@ -53,7 +53,7 @@ install.clean: exe.clean
 
 # zip make targets ###########################
 zip: install
-	cd dist && zip -r $(PACKAGE).zip *
+	cd dist && zip -r $(PACKAGE).zip * -x $(PACKAGE).ini
 
 zip.clean:
 	rm dist/$(PACKAGE).zip

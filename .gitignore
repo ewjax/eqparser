@@ -1,5 +1,6 @@
 # specific files
 pre-commit.bat
+EQParser.ini
 
 
 # directories for this project

@@ -181,13 +181,7 @@ class EverquestLogFile:
             if TEST_ELF:
 
                 # read a sample logfile for testing
-                # logfile_name = './data/test/randoms.txt'
-                # logfile_name = './data/test/pets.txt'
-                # logfile_name = './data/test/pets2.txt'
-                # logfile_name = './data/test/pets_long.txt'
-                logfile_name = './data/test/mage_pets_level4-29.txt'
-                # logfile_name = './data/test/xarantik.txt'
-                # logfile_name = './data/test/fights.txt'
+                logfile_name = './data/test/test_input.txt'
 
                 # start parsing, but in this case, start reading from the beginning of the logfile,
                 # rather than the end (default)
