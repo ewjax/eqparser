@@ -109,9 +109,10 @@ class EQParser(EverquestLogFile.EverquestLogFile):
         for parse_target in self.parse_target_list:
             if parse_target.matches(line):
                 report_str = parse_target.report()
+
+                # todo - process the report information in some manner
                 print(report_str, end='')
 
-                # todo - send report_str to the remote logging client
 
     #
     #

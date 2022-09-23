@@ -66,7 +66,7 @@ class ParseTarget:
             if m:
 
                 # allow for any additional logic to be applied, if needed, by derived classes
-                if self._additional_match_logic(m):
+                if self._custom_match_hook(m, line):
                     rv = True
 
                     # save the matching line and set the timestamps
@@ -77,13 +77,14 @@ class ParseTarget:
 
     #
     #
-    def _additional_match_logic(self, m: re.Match) -> bool:
+    def _custom_match_hook(self, m: re.Match, line: str) -> bool:
         """
         provide a hook for derived classes to override this method and specialize the search
         default action is simply return true
 
         Args:
             m: re.Match object from the search
+            line: current line
 
         Returns:
             True/False if this is a match
@@ -250,7 +251,7 @@ class FTE_Parser(ParseTarget):
         ]
 
     # overload the default base class behavior to add some additional logic
-    def _additional_match_logic(self, m: re.Match) -> bool:
+    def _custom_match_hook(self, m: re.Match, line: str) -> bool:
         if m:
             target_name = m.group('target_name')
             playername = m.group('playername')
@@ -297,7 +298,7 @@ class Random_Parser(ParseTarget):
         ]
 
     # overload the default base class behavior to add some additional logic
-    def _additional_match_logic(self, m: re.Match) -> bool:
+    def _custom_match_hook(self, m: re.Match, line: str) -> bool:
         rv = False
         if m:
             # if m is true, and contains the playername group, this represents the first line of the random dice roll event
