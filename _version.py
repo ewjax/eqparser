@@ -1,3 +1,3 @@
 
 # version number
-__VERSION__ = '0.3.0.17-dev.3'
+__VERSION__ = '0.3.0.18-dev.4'

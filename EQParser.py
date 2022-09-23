@@ -1,4 +1,5 @@
 import asyncio
+import pywin32_bootstrap
 import win32console
 
 import EverquestLogFile
