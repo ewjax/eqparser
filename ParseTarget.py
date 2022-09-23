@@ -75,9 +75,19 @@ class ParseTarget:
         # return self.matched
         return rv
 
-    # provide a hook for derived classes to override this method and specialize the search
-    # default action is simply return true
+    #
+    #
     def _additional_match_logic(self, m: re.Match) -> bool:
+        """
+        provide a hook for derived classes to override this method and specialize the search
+        default action is simply return true
+
+        Args:
+            m: re.Match object from the search
+
+        Returns:
+            True/False if this is a match
+        """
         if m:
             return True
 
@@ -280,7 +290,7 @@ class Random_Parser(ParseTarget):
     def __init__(self):
         super().__init__()
         self.playername = None
-        self.short_description = 'General Random!'
+        self.short_description = 'Random!'
         self._search_list = [
             '\\*\\*A Magic Die is rolled by (?P<playername>[\\w ]+)\\.',
             '\\*\\*It could have been any number from (?P<low>[0-9]+) to (?P<high>[0-9]+), but this time it turned up a (?P<value>[0-9]+)\\.'
