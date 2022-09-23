@@ -46,8 +46,7 @@ class EQParser(EverquestLogFile.EverquestLogFile):
             FTE_Parser(),
             PlayerSlain_Parser(),
             Earthquake_Parser(),
-            ServerRandom_Parser(),
-            GeneralRandom_Parser(),
+            Random_Parser(),
         ]
 
     #
@@ -109,7 +108,7 @@ class EQParser(EverquestLogFile.EverquestLogFile):
         for parse_target in self.parse_target_list:
             if parse_target.matches(line):
                 report_str = parse_target.report()
-                print(report_str)
+                print(report_str, end='')
 
                 # todo - send report_str to the remote logging client
 
