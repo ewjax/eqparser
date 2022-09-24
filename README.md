@@ -59,7 +59,7 @@ Example child class _search_list intended to watch for FTE messages:
 ```
 
 ### *ParseTarget._custom_match_hook()*
-Once ParseTarget.matches() finds a match when checking against the _search_list of regular expression triggers, it then calls ParseTarget._custom_march_hook() method.  The default behavior is simply to return True, but the intention is to allow child classes to override this function to provide any additional logic.
+Once ParseTarget.matches() finds a match when checking against the _search_list of regular expression triggers, it then calls ParseTarget._custom_match_hook() method.  The default behavior is simply to return True, but the intention is to allow child classes to override this function to provide any additional logic.
 
 Examples of possible uses of this function can be seen in the child classes 'FTE_Parser' and 'Random_Parser'.  In particular, FTE_Parser uses this function to capture the player name and target name in the short_description variable, and the Random_Parser class uses this function to add the logic necessary to deal with the fact that Everquest random events actually generate two lines in the log file, rather than one.
 ```
@@ -123,7 +123,7 @@ Several child classes are pre-defined in ParseTarget.py, but the opportunity to 
 ---
 ## Other Source Code 
 
-- EQParser.py: Defines EQParser class, which derives from EverquestLogFile base class.  The construction function creates a list of ParseTarget child class objects to use for parsing individual logfile lines.  
+- EQParser.py: Defines EQParser class, which derives from EverquestLogFile base class.  The constructor function creates a list of ParseTarget child class objects to use for parsing individual logfile lines.  
 ```
         self.parse_target_list = [
             VesselDrozlin_Parser(),
