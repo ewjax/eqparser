@@ -147,6 +147,7 @@ class VesselDrozlin_Parser(ParseTarget):
     """
     Parser for Vessel Drozlin spawn
     """
+
     def __init__(self):
         super().__init__()
         self.short_description = 'Vessel Drozlin spawn!'
@@ -163,6 +164,7 @@ class VerinaTomb_Parser(ParseTarget):
     """
     Parser for Verina Tomb spawn
     """
+
     def __init__(self):
         super().__init__()
         self.short_description = 'Verina Tomb spawn!'
@@ -173,12 +175,13 @@ class VerinaTomb_Parser(ParseTarget):
             '^Verina Tomb says',
             '^You have been slain by Verina Tomb'
         ]
-        
-        
+
+
 class MasterYael_Parser(ParseTarget):
     """
     Parser for Master Yael spawn
     """
+
     def __init__(self):
         super().__init__()
         self.short_description = 'Master Yael spawn!'
@@ -195,6 +198,7 @@ class DainFrostreaverIV_Parser(ParseTarget):
     """
     Parser for Dain Frostreaver IV spawn
     """
+
     def __init__(self):
         super().__init__()
         self.short_description = 'Dain Frostreaver IV spawn!'
@@ -210,6 +214,7 @@ class Severilous_Parser(ParseTarget):
     """
     Parser for Severilous spawn
     """
+
     def __init__(self):
         super().__init__()
         self.short_description = 'Severilous spawn!'
@@ -226,6 +231,7 @@ class CazicThule_Parser(ParseTarget):
     """
     Parser for Cazic Thule spawn
     """
+
     def __init__(self):
         super().__init__()
         self.short_description = 'Cazic Thule spawn!'
@@ -243,6 +249,7 @@ class FTE_Parser(ParseTarget):
     Parser for general FTE messages
     overrides _additional_match_logic() for additional info to be captured
     """
+
     def __init__(self):
         super().__init__()
         self.short_description = 'FTE!'
@@ -263,6 +270,7 @@ class PlayerSlain_Parser(ParseTarget):
     """
     Parser for player has been slain
     """
+
     def __init__(self):
         super().__init__()
         self.short_description = 'Player Slain!'
@@ -275,6 +283,7 @@ class Earthquake_Parser(ParseTarget):
     """
     Parser for Earthquake
     """
+
     def __init__(self):
         super().__init__()
         self.short_description = 'Earthquake!'
@@ -288,6 +297,7 @@ class Random_Parser(ParseTarget):
     Parser for Random (low-high)
     overrides _additional_match_logic() for additional info to be captured
     """
+
     def __init__(self):
         super().__init__()
         self.playername = None
@@ -315,3 +325,97 @@ class Random_Parser(ParseTarget):
                 rv = True
 
         return rv
+
+
+class CommsFilter_Parser(ParseTarget):
+    """
+    Parser for Comms Filter
+    allows filtering on/off the various communications channels
+    """
+
+    def __init__(self):
+        super().__init__()
+
+        # individual exclude flags, just in case wish to customize this later for finer control, for whatever reason
+        # without this level of complication, the final regex can be boiled down to
+        #       '^(?![\\w ]+ (told|tell(s)?|say(s)?|auction(s)?|shout(s)?|-> [\\w ]+:))'
+        # but we'll keep the complicated approach, just in case its needed down the road
+        exclude_tell = True
+        exclude_say = True
+        exclude_group = True
+        exclude_auc = True
+        exclude_ooc = True
+        exclude_shout = True
+        exclude_guild = True
+
+        # tells
+        # [Sun Sep 18 15:22:41 2022] You told Snoiche, 'gotcha'
+        # [Sun Sep 18 15:16:43 2022] Frostclaw tells you, 'vog plz'
+        # [Thu Aug 18 14:31:34 2022] Azleep -> Berrma: have you applied?
+        # [Thu Aug 18 14:31:48 2022] Berrma -> Azleep: ya just need someone to invite i believe
+        tell_regex = ''
+        if exclude_tell:
+            tell_regex1 = "You told [\\w ]+, '"
+            tell_regex2 = "[\\w ]+ tells you, '"
+            tell_regex3 = "[\\w ]+ -> [\\w ]+:"
+            tell_regex = f'^(?!{tell_regex1}|{tell_regex2}|{tell_regex3})'
+
+        # say
+        # [Sat Aug 13 15:36:21 2022] You say, 'lfg'
+        # [Sun Sep 18 15:17:28 2022] Conceded says, 'where tf these enchs lets goo'
+        say_regex = ''
+        if exclude_say:
+            say_regex1 = "You say, '"
+            say_regex2 = "[\\w ]+ says, '"
+            say_regex = f'^(?!{say_regex1}|{say_regex2})'
+
+        # group
+        # [Fri Aug 12 18:12:46 2022] You tell your party, 'Mezzed << froglok ilis knight >>'
+        # [Fri Aug 12 18:07:08 2022] Mezmurr tells the group, 'a << myconid reaver >> is slowed'
+        group_regex = ''
+        if exclude_group:
+            group_regex1 = "You tell your party, '"
+            group_regex2 = "[\\w ]+ tells the group, '"
+            group_regex = f'^(?!{group_regex1}|{group_regex2})'
+
+        # auction
+        # [Wed Jul 20 15:39:25 2022] You auction, 'wts Smoldering Brand // Crystal Lined Slippers // Jaded Electrum Bracelet // Titans Fist'
+        # [Wed Sep 21 17:54:28 2022] Dedguy auctions, 'WTB Crushed Topaz'
+        auc_regex = ''
+        if exclude_auc:
+            auc_regex1 = "You auction, '"
+            auc_regex2 = "[\\w ]+ auctions, '"
+            auc_regex = f'^(?!{auc_regex1}|{auc_regex2})'
+
+        # ooc
+        # [Sat Aug 20 22:19:09 2022] You say out of character, 'Sieved << a scareling >>'
+        # [Sun Sep 18 15:25:39 2022] Piesy says out of character, 'Come port with the Puffbottom Express and <Dial a Port>! First-Class travel'
+        ooc_regex = ''
+        if exclude_ooc:
+            ooc_regex1 = "You say out of character, '"
+            ooc_regex2 = "[\\w ]+ says out of character, '"
+            ooc_regex = f'^(?!{ooc_regex1}|{ooc_regex2})'
+
+        # shout
+        # [Fri Jun 04 16:16:41 2021] You shout, 'I'M SORRY WILSON!!!'
+        # [Sun Sep 18 15:21:05 2022] Abukii shouts, 'ASSIST --       Cleric of Zek '
+        shout_regex = ''
+        if exclude_shout:
+            shout_regex1 = "You shout, '"
+            shout_regex2 = "[\\w ]+ shouts, '"
+            shout_regex = f'^(?!{shout_regex1}|{shout_regex2})'
+
+        # guild
+        # [Fri Aug 12 22:15:07 2022] You say to your guild, 'who got fright'
+        # [Fri Sep 23 14:18:03 2022] Kylarok tells the guild, 'whoever was holding the chain coif for Pocoyo can nvermind xD'
+        guild_regex = ''
+        if exclude_guild:
+            guild_regex1 = "You say to your guild, '"
+            guild_regex2 = "[\\w ]+ tells the guild, '"
+            guild_regex = f'^(?!{guild_regex1}|{guild_regex2})'
+
+        # put them all together
+        self.short_description = 'Comms Filter'
+        self._search_list = [
+            f'{tell_regex}{say_regex}{group_regex}{auc_regex}{ooc_regex}{shout_regex}{guild_regex}',
+        ]

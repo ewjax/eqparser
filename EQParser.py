@@ -36,19 +36,25 @@ class EQParser(EverquestLogFile.EverquestLogFile):
         heartbeat = config.config_data.getint('Everquest', 'heartbeat')
         super().__init__(base_dir, logs_dir, heartbeat)
 
+        # # create a list of parsers
+        # self.parse_target_list = [
+        #     VesselDrozlin_Parser(),
+        #     VerinaTomb_Parser(),
+        #     DainFrostreaverIV_Parser(),
+        #     Severilous_Parser(),
+        #     CazicThule_Parser(),
+        #     MasterYael_Parser(),
+        #     FTE_Parser(),
+        #     PlayerSlain_Parser(),
+        #     Earthquake_Parser(),
+        #     Random_Parser(),
+        # ]
+
         # create a list of parsers
         self.parse_target_list = [
-            VesselDrozlin_Parser(),
-            VerinaTomb_Parser(),
-            DainFrostreaverIV_Parser(),
-            Severilous_Parser(),
-            CazicThule_Parser(),
-            MasterYael_Parser(),
-            FTE_Parser(),
-            PlayerSlain_Parser(),
-            Earthquake_Parser(),
-            Random_Parser(),
+            CommsFilter_Parser(),
         ]
+
 
     #
     # process each line
