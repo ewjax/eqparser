@@ -34,7 +34,7 @@ class EverquestLogFile:
         # instance data
         self.base_directory = base_directory
         self.logs_directory = logs_directory
-        self.char_name = 'Unknown'
+        self._char_name = 'Unknown'
         self.server_name = 'Unknown'
         self.logfile_name = 'Unknown'
         self.logfile = None
@@ -44,6 +44,15 @@ class EverquestLogFile:
 
         self.prevtime = time.time()
         self.heartbeat = heartbeat
+
+    def set_char_name(self, name: str) -> None:
+        """
+        allow derived classes to override this as necessary, to do whatever is needed when tracking toon changes
+
+        Args:
+            name: player whose log file is being parsed
+        """
+        self._char_name = name
 
     def set_parsing(self) -> None:
         """
@@ -107,13 +116,15 @@ class EverquestLogFile:
             # stop parsing old and open the new logfile
             self.close()
 
-            self.char_name = m.group('charname')
+            # self._char_name = m.group('charname')
+            self.set_char_name(m.group('charname'))
             rv = self.open(latest_file, seek_end)
 
         # if we aren't parsing any logfile, then open latest
         elif not self.is_parsing():
 
-            self.char_name = m.group('charname')
+            # self._char_name = m.group('charname')
+            self.set_char_name(m.group('charname'))
             rv = self.open(latest_file, seek_end)
 
         return rv
@@ -173,7 +184,7 @@ class EverquestLogFile:
 
         # already parsing?
         if self.is_parsing():
-            starprint('Already parsing character log for: [{}]'.format(self.char_name))
+            starprint('Already parsing character log for: [{}]'.format(self._char_name))
 
         else:
 
@@ -195,13 +206,13 @@ class EverquestLogFile:
             # if the log logfile was successfully opened, then initiate parsing
             if rv:
                 # status message
-                starprint('Now parsing character log for: [{}]'.format(self.char_name))
+                starprint('Now parsing character log for: [{}]'.format(self._char_name))
 
                 # create the asyncio coroutine and kick it off
                 asyncio.create_task(self.run())
 
             else:
-                starprint('ERROR: Could not open character log logfile for: [{}]'.format(self.char_name))
+                starprint('ERROR: Could not open character log logfile for: [{}]'.format(self._char_name))
                 starprint('Log logfile_name: [{}]'.format(self.logfile_name))
 
         return rv
@@ -236,17 +247,17 @@ class EverquestLogFile:
                 elapsed_seconds = (now - self.prevtime)
 
                 if elapsed_seconds > self.heartbeat:
-                    starprint(f'[{self.char_name}] heartbeat over limit, elapsed seconds = {elapsed_seconds:.2f}')
+                    starprint(f'[{self._char_name}] heartbeat over limit, elapsed seconds = {elapsed_seconds:.2f}')
                     self.prevtime = now
 
                     # attempt to open latest log logfile - returns True if a new logfile is opened
                     if self.open_latest():
-                        starprint('Now parsing character log for: [{}]'.format(self.char_name))
+                        starprint('Now parsing character log for: [{}]'.format(self._char_name))
 
                 # if we didn't read a line, pause just for a 100 msec blink
                 await asyncio.sleep(0.1)
 
-        starprint(f'Stopped parsing character log for: [{self.char_name}]')
+        starprint(f'Stopped parsing character log for: [{self._char_name}]')
 
     async def process_line(self, line: str, printline: bool = False) -> None:
         """

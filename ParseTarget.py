@@ -36,7 +36,8 @@ class ParseTarget:
         self._local_datetime = None
         self._utc_datetime = None
 
-        # field separation character, used in the report() function
+        # parsing player name and field separation character, used in the report() function
+        self.parsing_player = 'Parsing Playerename not set'
         self.field_separator = '|'
 
     #
@@ -131,7 +132,8 @@ class ParseTarget:
         Returns:
             str: single line with all fields
         """
-        rv = f'{self.short_description}{self.field_separator}'
+        rv = f'{self.parsing_player}{self.field_separator}'
+        rv += f'{self.short_description}{self.field_separator}'
         rv += f'{self._utc_datetime}{self.field_separator}'
         rv += f'{self._local_datetime}{self.field_separator}'
         rv += f'{self._matching_line}'
@@ -336,10 +338,9 @@ class CommsFilter_Parser(ParseTarget):
     def __init__(self):
         super().__init__()
 
-        # individual exclude flags, just in case wish to customize this later for finer control, for whatever reason
-        # without this level of complication, the final regex can be boiled down to
-        #       '^(?![\\w ]+ (told|tell(s)?|say(s)?|auction(s)?|shout(s)?|-> [\\w ]+:))'
-        # but we'll keep the complicated approach, just in case its needed down the road
+        # individual communication channel exclude flags,
+        # just in case wish to customize this later for finer control, for whatever reason
+        # this is probably overkill...
         exclude_tell = True
         exclude_say = True
         exclude_group = True
@@ -355,10 +356,11 @@ class CommsFilter_Parser(ParseTarget):
         # [Thu Aug 18 14:31:48 2022] Berrma -> Azleep: ya just need someone to invite i believe
         tell_regex = ''
         if exclude_tell:
-            tell_regex1 = "You told [\\w ]+, '"
-            tell_regex2 = "[\\w ]+ tells you, '"
-            tell_regex3 = "[\\w ]+ -> [\\w ]+:"
-            tell_regex = f'^(?!{tell_regex1}|{tell_regex2}|{tell_regex3})'
+            tell_regex1 = "You told [\\w]+, '"
+            tell_regex2 = "[\\w]+ tells you, '"
+            tell_regex3 = "[\\w]+ -> [\\w]+:"
+            # note that the tell_regexN bits filter tells IN, and then we surround it with (?! ) to filter then OUT
+            tell_regex = f'(?!^{tell_regex1}|{tell_regex2}|{tell_regex3})'
 
         # say
         # [Sat Aug 13 15:36:21 2022] You say, 'lfg'
@@ -366,8 +368,8 @@ class CommsFilter_Parser(ParseTarget):
         say_regex = ''
         if exclude_say:
             say_regex1 = "You say, '"
-            say_regex2 = "[\\w ]+ says, '"
-            say_regex = f'^(?!{say_regex1}|{say_regex2})'
+            say_regex2 = "[\\w]+ says, '"
+            say_regex = f'(?!^{say_regex1}|{say_regex2})'
 
         # group
         # [Fri Aug 12 18:12:46 2022] You tell your party, 'Mezzed << froglok ilis knight >>'
@@ -375,8 +377,8 @@ class CommsFilter_Parser(ParseTarget):
         group_regex = ''
         if exclude_group:
             group_regex1 = "You tell your party, '"
-            group_regex2 = "[\\w ]+ tells the group, '"
-            group_regex = f'^(?!{group_regex1}|{group_regex2})'
+            group_regex2 = "[\\w]+ tells the group, '"
+            group_regex = f'(?!^{group_regex1}|{group_regex2})'
 
         # auction
         # [Wed Jul 20 15:39:25 2022] You auction, 'wts Smoldering Brand // Crystal Lined Slippers // Jaded Electrum Bracelet // Titans Fist'
@@ -384,8 +386,8 @@ class CommsFilter_Parser(ParseTarget):
         auc_regex = ''
         if exclude_auc:
             auc_regex1 = "You auction, '"
-            auc_regex2 = "[\\w ]+ auctions, '"
-            auc_regex = f'^(?!{auc_regex1}|{auc_regex2})'
+            auc_regex2 = "[\\w]+ auctions, '"
+            auc_regex = f'(?!^{auc_regex1}|{auc_regex2})'
 
         # ooc
         # [Sat Aug 20 22:19:09 2022] You say out of character, 'Sieved << a scareling >>'
@@ -393,8 +395,8 @@ class CommsFilter_Parser(ParseTarget):
         ooc_regex = ''
         if exclude_ooc:
             ooc_regex1 = "You say out of character, '"
-            ooc_regex2 = "[\\w ]+ says out of character, '"
-            ooc_regex = f'^(?!{ooc_regex1}|{ooc_regex2})'
+            ooc_regex2 = "[\\w]+ says out of character, '"
+            ooc_regex = f'(?!^{ooc_regex1}|{ooc_regex2})'
 
         # shout
         # [Fri Jun 04 16:16:41 2021] You shout, 'I'M SORRY WILSON!!!'
@@ -402,8 +404,8 @@ class CommsFilter_Parser(ParseTarget):
         shout_regex = ''
         if exclude_shout:
             shout_regex1 = "You shout, '"
-            shout_regex2 = "[\\w ]+ shouts, '"
-            shout_regex = f'^(?!{shout_regex1}|{shout_regex2})'
+            shout_regex2 = "[\\w]+ shouts, '"
+            shout_regex = f'(?!^{shout_regex1}|{shout_regex2})'
 
         # guild
         # [Fri Aug 12 22:15:07 2022] You say to your guild, 'who got fright'
@@ -411,11 +413,53 @@ class CommsFilter_Parser(ParseTarget):
         guild_regex = ''
         if exclude_guild:
             guild_regex1 = "You say to your guild, '"
-            guild_regex2 = "[\\w ]+ tells the guild, '"
-            guild_regex = f'^(?!{guild_regex1}|{guild_regex2})'
+            guild_regex2 = "[\\w]+ tells the guild, '"
+            guild_regex = f'(?!^{guild_regex1}|{guild_regex2})'
 
         # put them all together
+        # if we weren't interested in being able to filter only some channels, then this could
+        # all be boiled down to just
+        #       (?!^[\\w]+ (told|tell(s)?|say(s)?|auction(s)?|shout(s)?|-> [\\w]+:))
         self.short_description = 'Comms Filter'
         self._search_list = [
             f'{tell_regex}{say_regex}{group_regex}{auc_regex}{ooc_regex}{shout_regex}{guild_regex}',
+        ]
+
+
+class Gratss_Parser(ParseTarget):
+    """
+    Parser for gratss messages
+    """
+
+    def __init__(self):
+        super().__init__()
+        self.short_description = 'Gratss'
+        self._search_list = [
+            ".*gratss(?i)",
+        ]
+
+
+class TOD_Parser(ParseTarget):
+    """
+    Parser for tod messages
+    """
+
+    def __init__(self):
+        super().__init__()
+        self.short_description = 'TOD'
+        self._search_list = [
+            ".*tod(?i)",
+        ]
+
+
+class GMOTD_Parser(ParseTarget):
+    """
+    Parser for GMOTD messages
+    """
+
+    def __init__(self):
+        super().__init__()
+        self.short_description = 'TOD'
+        self._search_list = [
+            '^GUILD MOTD:',
         ]

@@ -49,7 +49,22 @@ class EQParser(EverquestLogFile.EverquestLogFile):
             Earthquake_Parser(),
             Random_Parser(),
             CommsFilter_Parser(),
+            Gratss_Parser(),
+            TOD_Parser(),
+            GMOTD_Parser(),
         ]
+
+    def set_char_name(self, name: str) -> None:
+        """
+        override base class setter function to also sweep thru list of parse targets 
+        and set their parsing player names
+
+        Args:
+            name: player whose log file is being parsed
+        """
+        super().set_char_name(name)
+        for parse_target in self.parse_target_list:
+            parse_target.parsing_player = name
 
     #
     # process each line
@@ -100,7 +115,7 @@ class EQParser(EverquestLogFile.EverquestLogFile):
         m = re.match(target, trunc_line)
         if m:
             if self.is_parsing():
-                starprint(f'Parsing character log for:    [{self.char_name}]')
+                starprint(f'Parsing character log for:    [{self._char_name}]')
                 starprint(f'Log filename:                 [{self.logfile_name}]')
                 starprint(f'Heartbeat timeout (seconds):  [{self.heartbeat}]')
             else:
