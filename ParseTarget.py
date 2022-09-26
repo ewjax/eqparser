@@ -459,7 +459,7 @@ class GMOTD_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
-        self.short_description = 'TOD'
+        self.short_description = 'GMOTD'
         self._search_list = [
             '^GUILD MOTD:',
         ]
