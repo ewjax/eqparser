@@ -442,6 +442,9 @@ class Gratss_Parser(ParseTarget):
 class TOD_Parser(ParseTarget):
     """
     Parser for tod messages
+
+    Parse for existence of TOD in comms channel, or for the explicit message 'target has been slain'
+
     """
 
     def __init__(self):
@@ -449,7 +452,110 @@ class TOD_Parser(ParseTarget):
         self.short_description = 'TOD'
         self._search_list = [
             ".*tod(?i)",
+            '^(?P<target_name>[\\w ]+) has been slain',
         ]
+
+        self.known_targets = [
+            'Kelorek`Dar',
+            'Vaniki',
+            'Vilefang',
+            'Zlandicar',
+            'Narandi the Wretched',
+            'Lodizal',
+            'Stormfeather',
+            'Dain Frostreaver IV',
+            'Derakor the Vindicator',
+            'Keldor Dek`Torek',
+            'King Tormax',
+            'The Statue of Rallos Zek',
+            'The Avatar of War',
+            'Tunare',
+            'Lord Yelinak',
+            'Master of the Guard',
+            'The Final Arbiter',
+            'The Progenitor',
+            'An angry goblin',
+            'Casalen',
+            'Dozekar the Cursed',
+            'Essedera',
+            'Grozzmel',
+            'Krigara',
+            'Lepethida',
+            'Midayor',
+            'Tavekalem',
+            'Ymmeln',
+            'Aaryonar',
+            'Cekenar',
+            'Dagarn the Destroyer',
+            'Eashen of the Sky',
+            'Ikatiar the Venom',
+            'Jorlleag',
+            'Lady Mirenilla',
+            'Lady Nevederia',
+            'Lord Feshlak',
+            'Lord Koi`Doken',
+            'Lord Kreizenn',
+            'Lord Vyemm',
+            'Sevalak',
+            'Vulak`Aerr',
+            'Zlexak',
+            'Gozzrem',
+            'Lendiniara the Keeper',
+            'Telkorenar',
+            'Wuoshi',
+            'Druushk',
+            'Hoshkar',
+            'Nexona',
+            'Phara Dar',
+            'Silverwing',
+            'Xygoz',
+            'Lord Doljonijiarnimorinar',
+            'Velketor the Sorcerer',
+            'Guardian Kozzalym',
+            'Klandicar',
+            'Myga NE PH',
+            'Myga ToV PH',
+            'Scout Charisa',
+            'Sontalak',
+            'Gorenaire',
+            'Vessel Drozlin',
+            'Severilous',
+            'Venril Sathir',
+            'Trakanon',
+            'Talendor',
+            'Faydedar',
+            'a shady goblin',
+            'Phinigel Autropos',
+            'Lord Nagafen',
+            'Zordak Ragefire',
+            'Verina Tomb',
+            'Lady Vox',
+            'A dracoliche',
+            'Cazic Thule',
+            'Dread',
+            'Fright',
+            'Terror',
+            'Wraith of a Shissir',
+            'Innoruuk',
+            'Noble Dojorn',
+            'Nillipuss',
+            'Master Yael',
+            'Sir Lucan D`Lere',
+        ]
+
+    # overload the default base class behavior to add some additional logic
+    def _custom_match_hook(self, m: re.Match, line: str) -> bool:
+        rv = False
+        if m:
+            rv = True
+            # reset the description in case it has been set to something else
+            self.short_description = 'TOD'
+            if 'target_name' in m.groupdict().keys():
+                target_name = m.group('target_name')
+                if target_name in self.known_targets:
+                    self.short_description = f'TOD (Slain Message): {target_name}'
+
+        return rv
 
 
 class GMOTD_Parser(ParseTarget):
