@@ -33,6 +33,7 @@ exe: libs
 	pyinstaller --onefile $(PACKAGE).py
 
 exe.clean: libs.clean
+	rm *.spec
 	rm -rfd build
 	#rm -rfd dist
 	rm dist/$(PACKAGE).exe

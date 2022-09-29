@@ -48,7 +48,7 @@ class EQParser(EverquestLogFile.EverquestLogFile):
             PlayerSlain_Parser(),
             Earthquake_Parser(),
             Random_Parser(),
-            CommsFilter_Parser(),
+            # CommsFilter_Parser(),
             Gratss_Parser(),
             TOD_Parser(),
             GMOTD_Parser(),
