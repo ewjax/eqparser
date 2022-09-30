@@ -33,7 +33,7 @@ def get_window_coordinates() -> (int, int, int, int):
     rv = (0, 0, 0, 0)
 
     # use win32gui function
-    window_handle = FindWindow(None, 'EQValet')
+    window_handle = FindWindow(None, 'EQParser')
     if window_handle:
         # use win32gui function
         (upper_left_x, upper_left_y, lower_right_x, lower_right_y) = GetWindowRect(window_handle)

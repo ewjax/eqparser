@@ -7,6 +7,26 @@ from datetime import datetime, timezone, timedelta
 #
 # Base class
 #
+# Notes for the developer:
+#   - derived classes constructor should correctly populate the following fields, according to whatever event this
+#     parser is watching for:
+#           self.short_description, a text description, and
+#           self._search_list, a list of regular expression(s) that indicate this event has happened
+#   - derived classes can optionally override the _custom_match_hook() method, if special/extra parsing is needed,
+#     or if a customized self.short_description is desired.  This method gets called from inside the standard matches()
+#     method.  The default base case behavior is to simply return True.
+#           see RandomParser() class for a good example, which deals with the fact that Everquest /random events
+#           are actually reported in TWO lines of text in the log file
+#
+#   - See the example derived classes in this file to get a better idea how to set these items up
+#
+#   - IMPORTANT:  These classes make use of the self.parsing_player field to embed the character name in the report.
+#     If and when the parser begins parsing a new log file, it is necessary to sweep through whatever list of ParseTarget
+#     objects are being maintained, and update the self.parsing_player field in each ParseTarget object, e.g. something like:
+#
+#             for parse_target in self.parse_target_list:
+#                 parse_target.parsing_player = name
+#
 class ParseTarget:
     """
     Base class that encapsulates all information about any particular event that is detected in a logfile
@@ -39,6 +59,7 @@ class ParseTarget:
         # parsing player name and field separation character, used in the report() function
         self.parsing_player = 'Unknown'
         self.field_separator = '|'
+        self.eqmarker = 'EQ__'
 
     #
     #
@@ -90,8 +111,7 @@ class ParseTarget:
         Returns:
             True/False if this is a match
         """
-        if m:
-            return True
+        return True
 
     def _set_timestamps(self, line: str) -> None:
         """
@@ -132,10 +152,11 @@ class ParseTarget:
         Returns:
             str: single line with all fields
         """
-        rv = f'{self.parsing_player}{self.field_separator}'
+        rv = f'{self.eqmarker}{self.field_separator}'
+        rv += f'{self.parsing_player}{self.field_separator}'
         rv += f'{self.short_description}{self.field_separator}'
         rv += f'{self._utc_datetime}{self.field_separator}'
-        rv += f'{self._local_datetime}{self.field_separator}'
+        # rv += f'{self._local_datetime}{self.field_separator}'
         rv += f'{self._matching_line}'
         return rv
 

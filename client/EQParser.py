@@ -13,7 +13,12 @@ import util
 from util import starprint
 from ParseTarget import *
 
-import remote_host
+# list of rsyslog (host, port) information
+remote_list = [
+    ('192.168.1.127', 514),
+    ('ec2-3-133-158-247.us-east-2.compute.amazonaws.com', 22514),
+]
+
 
 #################################################################################################
 
@@ -59,12 +64,15 @@ class EQParser(EverquestLogFile.EverquestLogFile):
         ]
 
         # set up a custom logger to use for rsyslog comms
-        logging.basicConfig(level=logging.INFO)
-        self.eq_logger = logging.getLogger('EQ')
+        self.logger_list = []
 
-        # set up a log handler that sends output to the rsyslog service at the indicated address
-        log_handler = logging.handlers.SysLogHandler(address=(remote_host.REMOTE_HOST, remote_host.REMOTE_PORT))
-        self.eq_logger.addHandler(log_handler)
+        logging.basicConfig(level=logging.INFO)
+
+        for (host, port) in remote_list:
+            eq_logger = logging.getLogger(f'{host}:{port}')
+            log_handler = logging.handlers.SysLogHandler(address=(host, port))
+            eq_logger.addHandler(log_handler)
+            self.logger_list.append(eq_logger)
 
     def set_char_name(self, name: str) -> None:
         """
@@ -140,9 +148,9 @@ class EQParser(EverquestLogFile.EverquestLogFile):
                 report_str = parse_target.report()
                 # print(report_str, end='')
 
-                # send the info to the remote log aggregator, prepended with a unique string to make it easier to parse
-                logmarker = remote_host.LOGMARKER
-                self.eq_logger.info(f'{logmarker}{report_str}')
+                # send the info to the remote log aggregator
+                for logger in self.logger_list:
+                    logger.info(report_str)
 
     #
     #
@@ -156,7 +164,9 @@ class EQParser(EverquestLogFile.EverquestLogFile):
         starprint('')
         starprint('EQParser:  Help', '^')
         starprint('')
-        starprint(f'Sending parsing event reports to: {remote_host.REMOTE_HOST}:{remote_host.REMOTE_PORT}')
+        for (host, port) in remote_list:
+            starprint(f'Sending parsing event reports to: {host}:{port}')
+        starprint('')
         starprint('User commands are accomplished by sending a tell to the below fictitious player names:')
         starprint('')
         starprint('General')

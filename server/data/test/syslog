@@ -5790,3 +5790,641 @@ Sep 30 00:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=
 Sep 30 00:17:01 FourBee CRON[7011]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
 Sep 30 00:27:28 FourBee systemd[1]: Started Session 78 of user pi.
 Sep 30 00:28:27 FourBee systemd[1]: Started Session 79 of user pi.
+Sep 30 00:29:27 FourBee systemd[1]: session-79.scope: Succeeded.
+Sep 30 01:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 1840064
+Sep 30 01:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 1798944
+Sep 30 01:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 1798944
+Sep 30 01:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 92
+Sep 30 01:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 01:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 01:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 01:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 01:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 01:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 01:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=546.791; max=553.137)Kibits/s
+Sep 30 01:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.400; max=64.437)Mibits/s
+Sep 30 01:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 01:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 01:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 01:17:01 FourBee CRON[7093]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 02:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 1880064
+Sep 30 02:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 1828704
+Sep 30 02:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 1828704
+Sep 30 02:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 94
+Sep 30 02:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 02:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 02:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 02:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 02:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 02:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 02:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=546.909; max=553.137)Kibits/s
+Sep 30 02:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.548; max=64.437)Mibits/s
+Sep 30 02:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 02:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 02:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 02:17:01 FourBee CRON[7153]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 03:10:01 FourBee CRON[7201]: (root) CMD (test -e /run/systemd/system || SERVICE_MODE=1 /sbin/e2scrub_all -A -r)
+Sep 30 03:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 1900064
+Sep 30 03:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 1858944
+Sep 30 03:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 1858944
+Sep 30 03:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 95
+Sep 30 03:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 03:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 03:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 03:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 03:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 03:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 03:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=546.963; max=553.137)Kibits/s
+Sep 30 03:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.714; max=65.097)Mibits/s
+Sep 30 03:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 03:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 03:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 03:17:01 FourBee CRON[7217]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 04:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 1940064
+Sep 30 04:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 1888704
+Sep 30 04:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 1888704
+Sep 30 04:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 97
+Sep 30 04:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 04:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 04:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 04:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 04:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 04:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 04:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=547.073; max=553.137)Kibits/s
+Sep 30 04:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.872; max=65.097)Mibits/s
+Sep 30 04:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 04:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 04:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 04:17:01 FourBee CRON[7284]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 05:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 1960064
+Sep 30 05:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 1918944
+Sep 30 05:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 1918944
+Sep 30 05:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 98
+Sep 30 05:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 05:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 05:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 05:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 05:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 05:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 05:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=547.126; max=553.137)Kibits/s
+Sep 30 05:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.844; max=65.097)Mibits/s
+Sep 30 05:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 05:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 05:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 05:17:01 FourBee CRON[7349]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 06:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 2000064
+Sep 30 06:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 1948704
+Sep 30 06:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 1948704
+Sep 30 06:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 100
+Sep 30 06:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 06:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 06:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 06:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 06:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 06:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 06:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=547.229; max=553.137)Kibits/s
+Sep 30 06:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.868; max=65.097)Mibits/s
+Sep 30 06:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 06:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 06:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 06:17:01 FourBee CRON[7413]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 06:25:01 FourBee CRON[7426]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))
+Sep 30 06:40:48 FourBee systemd[1]: Starting Daily apt upgrade and clean activities...
+Sep 30 06:40:49 FourBee systemd[1]: apt-daily-upgrade.service: Succeeded.
+Sep 30 06:40:49 FourBee systemd[1]: Finished Daily apt upgrade and clean activities.
+Sep 30 06:40:49 FourBee systemd[1]: apt-daily-upgrade.service: Consumed 1.293s CPU time.
+Sep 30 07:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 2020064
+Sep 30 07:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 1978944
+Sep 30 07:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 1978944
+Sep 30 07:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 101
+Sep 30 07:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 07:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 07:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 07:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 07:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 07:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 07:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=547.281; max=553.137)Kibits/s
+Sep 30 07:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.844; max=65.097)Mibits/s
+Sep 30 07:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 07:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 07:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 07:17:01 FourBee CRON[7540]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 08:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 2060064
+Sep 30 08:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 2008704
+Sep 30 08:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 2008704
+Sep 30 08:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 103
+Sep 30 08:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 08:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 08:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 08:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 08:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 08:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 08:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=547.388; max=553.137)Kibits/s
+Sep 30 08:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.866; max=65.097)Mibits/s
+Sep 30 08:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 08:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 08:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 08:17:01 FourBee CRON[7605]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 08:22:27 FourBee systemd[1]: Stopping Network Time Synchronization...
+Sep 30 08:22:27 FourBee systemd[1]: systemd-timesyncd.service: Succeeded.
+Sep 30 08:22:27 FourBee systemd[1]: Stopped Network Time Synchronization.
+Sep 30 08:22:27 FourBee systemd[1]: Starting Network Time Synchronization...
+Sep 30 08:22:27 FourBee systemd[1]: Started Network Time Synchronization.
+Sep 30 08:22:27 FourBee systemd-timesyncd[7631]: Initial synchronization to time server 108.61.73.243:123 (0.debian.pool.ntp.org).
+Sep 30 08:52:21 FourBee systemd[1]: Stopping Network Time Synchronization...
+Sep 30 08:52:21 FourBee systemd[1]: systemd-timesyncd.service: Succeeded.
+Sep 30 08:52:21 FourBee systemd[1]: Stopped Network Time Synchronization.
+Sep 30 08:52:21 FourBee systemd[1]: Starting Network Time Synchronization...
+Sep 30 08:52:21 FourBee systemd[1]: Started Network Time Synchronization.
+Sep 30 08:52:21 FourBee systemd-timesyncd[7675]: Initial synchronization to time server 67.205.162.81:123 (0.debian.pool.ntp.org).
+Sep 30 09:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 2080064
+Sep 30 09:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 2038944
+Sep 30 09:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 2038944
+Sep 30 09:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 104
+Sep 30 09:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 09:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 09:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 09:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 09:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 09:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 09:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=547.436; max=553.137)Kibits/s
+Sep 30 09:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.846; max=65.097)Mibits/s
+Sep 30 09:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 09:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 09:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 09:17:01 FourBee CRON[7706]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 10:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 2120064
+Sep 30 10:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 2068704
+Sep 30 10:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 2068704
+Sep 30 10:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 106
+Sep 30 10:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 10:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 10:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 10:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 10:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 10:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 10:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=547.527; max=553.137)Kibits/s
+Sep 30 10:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.831; max=65.097)Mibits/s
+Sep 30 10:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 10:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 10:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 10:17:01 FourBee CRON[7766]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 11:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 2140064
+Sep 30 11:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 2098944
+Sep 30 11:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 2098944
+Sep 30 11:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 107
+Sep 30 11:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 11:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 11:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 11:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 11:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 11:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 11:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=547.572; max=553.137)Kibits/s
+Sep 30 11:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.823; max=65.097)Mibits/s
+Sep 30 11:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 11:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 11:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 11:17:01 FourBee CRON[7829]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 11:23:17 FourBee systemd[1]: Starting Daily apt download activities...
+Sep 30 11:23:18 FourBee systemd[1]: apt-daily.service: Succeeded.
+Sep 30 11:23:18 FourBee systemd[1]: Finished Daily apt download activities.
+Sep 30 11:23:18 FourBee systemd[1]: apt-daily.service: Consumed 1.269s CPU time.
+Sep 30 12:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 2180064
+Sep 30 12:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 2128704
+Sep 30 12:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 2128704
+Sep 30 12:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 109
+Sep 30 12:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 12:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 12:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 12:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 12:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 12:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 12:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=547.658; max=553.137)Kibits/s
+Sep 30 12:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.955; max=65.097)Mibits/s
+Sep 30 12:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 12:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 12:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 12:17:01 FourBee CRON[7940]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|FTE: Vessel Drozlin engages Azleep|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:06:09+00:00|2021-05-31 16:06:09-07:00|[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|TOD (Slain Message): Vessel Drozlin|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Player Slain!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|FTE: Verina Tomb engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|TOD (Slain Message): Verina Tomb|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|FTE: Dain Frostreaver IV engages Nightadder|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:39+00:00|2021-08-12 22:30:39-07:00|[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:43+00:00|2021-08-12 22:30:43-07:00|[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:48+00:00|2021-08-12 22:30:48-07:00|[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:31:16+00:00|2021-08-12 22:31:16-07:00|[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|FTE: Severilous engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|TOD (Slain Message): Severilous|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Cazic Thule spawn!|2022-08-13 22:24:40+00:00|2022-08-13 15:24:40-07:00|[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Earthquake!|2022-02-19 20:34:30+00:00|2022-02-19 13:34:30-07:00|[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:04:32+00:00|2021-08-14 17:04:32-07:00|[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:04:43+00:00|2021-08-14 17:04:43-07:00|[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Player Slain!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-10000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-1000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-100, Value=94|2022-09-18 21:14:42+00:00|2022-09-18 14:14:42-07:00|[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Gratss|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:41:50+00:00|2022-09-18 16:41:50-07:00|[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:42:34+00:00|2022-09-18 16:42:34-07:00|[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:42:36+00:00|2022-09-18 16:42:36-07:00|[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|TOD|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|TOD|2021-05-20 04:14:16+00:00|2021-05-19 21:14:16-07:00|[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|TOD|2021-05-20 04:15:49+00:00|2021-05-19 21:15:49-07:00|[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|TOD|2021-07-03 08:19:27+00:00|2021-07-03 01:19:27-07:00|[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|TOD|2021-07-05 21:00:56+00:00|2021-07-05 14:00:56-07:00|[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|GMOTD|2021-03-20 02:16:48+00:00|2021-03-19 19:16:48-07:00|[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Sep 30 12:59:12 ewj-desktop EQ__Unknown|GMOTD|2021-03-30 04:13:18+00:00|2021-03-29 21:13:18-07:00|[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|FTE: Vessel Drozlin engages Azleep|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:06:09+00:00|2021-05-31 16:06:09-07:00|[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|TOD (Slain Message): Vessel Drozlin|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Player Slain!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|FTE: Verina Tomb engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|TOD (Slain Message): Verina Tomb|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|FTE: Dain Frostreaver IV engages Nightadder|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:39+00:00|2021-08-12 22:30:39-07:00|[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:43+00:00|2021-08-12 22:30:43-07:00|[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:48+00:00|2021-08-12 22:30:48-07:00|[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:31:16+00:00|2021-08-12 22:31:16-07:00|[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|FTE: Severilous engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|TOD (Slain Message): Severilous|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Cazic Thule spawn!|2022-08-13 22:24:40+00:00|2022-08-13 15:24:40-07:00|[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Earthquake!|2022-02-19 20:34:30+00:00|2022-02-19 13:34:30-07:00|[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:04:32+00:00|2021-08-14 17:04:32-07:00|[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:04:43+00:00|2021-08-14 17:04:43-07:00|[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Player Slain!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-10000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-1000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-100, Value=94|2022-09-18 21:14:42+00:00|2022-09-18 14:14:42-07:00|[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Gratss|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:41:50+00:00|2022-09-18 16:41:50-07:00|[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:42:34+00:00|2022-09-18 16:42:34-07:00|[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:42:36+00:00|2022-09-18 16:42:36-07:00|[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|TOD|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|TOD|2021-05-20 04:14:16+00:00|2021-05-19 21:14:16-07:00|[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|TOD|2021-05-20 04:15:49+00:00|2021-05-19 21:15:49-07:00|[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|TOD|2021-07-03 08:19:27+00:00|2021-07-03 01:19:27-07:00|[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|TOD|2021-07-05 21:00:56+00:00|2021-07-05 14:00:56-07:00|[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|GMOTD|2021-03-20 02:16:48+00:00|2021-03-19 19:16:48-07:00|[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Sep 30 13:04:50 ewj-desktop EQ__Unknown|GMOTD|2021-03-30 04:13:18+00:00|2021-03-29 21:13:18-07:00|[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Sep 30 13:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 2200064
+Sep 30 13:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 2158944
+Sep 30 13:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 2158944
+Sep 30 13:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 110
+Sep 30 13:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 13:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 13:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 13:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 13:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 13:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 13:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=547.703; max=553.137)Kibits/s
+Sep 30 13:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.945; max=65.097)Mibits/s
+Sep 30 13:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 13:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 13:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 13:12:51 FourBee PackageKit: refresh-cache transaction /14_adbebacd from uid 1000 finished with success after 3308ms
+Sep 30 13:12:56 FourBee PackageKit: get-updates transaction /15_bacddecd from uid 1000 finished with success after 4857ms
+Sep 30 13:17:01 FourBee CRON[8382]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 13:30:48 FourBee systemd[1]: Starting Cleanup of Temporary Directories...
+Sep 30 13:30:48 FourBee systemd[1]: session-76.scope: Succeeded.
+Sep 30 13:30:48 FourBee systemd[1]: systemd-tmpfiles-clean.service: Succeeded.
+Sep 30 13:30:48 FourBee systemd[1]: Finished Cleanup of Temporary Directories.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|FTE: Vessel Drozlin engages Azleep|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|FTE: Vessel Drozlin engages Azleep|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:06:09+00:00|2021-05-31 16:06:09-07:00|[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:06:09+00:00|2021-05-31 16:06:09-07:00|[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD (Slain Message): Vessel Drozlin|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD (Slain Message): Vessel Drozlin|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Player Slain!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Player Slain!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|FTE: Verina Tomb engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|FTE: Verina Tomb engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Verina Tomb spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD (Slain Message): Verina Tomb|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD (Slain Message): Verina Tomb|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|FTE: Dain Frostreaver IV engages Nightadder|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|FTE: Dain Frostreaver IV engages Nightadder|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:39+00:00|2021-08-12 22:30:39-07:00|[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:39+00:00|2021-08-12 22:30:39-07:00|[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:43+00:00|2021-08-12 22:30:43-07:00|[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:43+00:00|2021-08-12 22:30:43-07:00|[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:48+00:00|2021-08-12 22:30:48-07:00|[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:48+00:00|2021-08-12 22:30:48-07:00|[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:31:16+00:00|2021-08-12 22:31:16-07:00|[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:31:16+00:00|2021-08-12 22:31:16-07:00|[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|FTE: Severilous engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|FTE: Severilous engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Severilous spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD (Slain Message): Severilous|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD (Slain Message): Severilous|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Cazic Thule spawn!|2022-08-13 22:24:40+00:00|2022-08-13 15:24:40-07:00|[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Cazic Thule spawn!|2022-08-13 22:24:40+00:00|2022-08-13 15:24:40-07:00|[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Earthquake!|2022-02-19 20:34:30+00:00|2022-02-19 13:34:30-07:00|[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Earthquake!|2022-02-19 20:34:30+00:00|2022-02-19 13:34:30-07:00|[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:04:32+00:00|2021-08-14 17:04:32-07:00|[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:04:32+00:00|2021-08-14 17:04:32-07:00|[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:04:43+00:00|2021-08-14 17:04:43-07:00|[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:04:43+00:00|2021-08-14 17:04:43-07:00|[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Master Yael spawn!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Player Slain!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Player Slain!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-10000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-10000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-1000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-1000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-100, Value=94|2022-09-18 21:14:42+00:00|2022-09-18 14:14:42-07:00|[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Random roll: Azleep, 0-100, Value=94|2022-09-18 21:14:42+00:00|2022-09-18 14:14:42-07:00|[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:41:50+00:00|2022-09-18 16:41:50-07:00|[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:41:50+00:00|2022-09-18 16:41:50-07:00|[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:42:34+00:00|2022-09-18 16:42:34-07:00|[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:42:34+00:00|2022-09-18 16:42:34-07:00|[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:42:36+00:00|2022-09-18 16:42:36-07:00|[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:42:36+00:00|2022-09-18 16:42:36-07:00|[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD|2021-05-20 04:14:16+00:00|2021-05-19 21:14:16-07:00|[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD|2021-05-20 04:14:16+00:00|2021-05-19 21:14:16-07:00|[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD|2021-05-20 04:15:49+00:00|2021-05-19 21:15:49-07:00|[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD|2021-05-20 04:15:49+00:00|2021-05-19 21:15:49-07:00|[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD|2021-07-03 08:19:27+00:00|2021-07-03 01:19:27-07:00|[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD|2021-07-03 08:19:27+00:00|2021-07-03 01:19:27-07:00|[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD|2021-07-05 21:00:56+00:00|2021-07-05 14:00:56-07:00|[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|TOD|2021-07-05 21:00:56+00:00|2021-07-05 14:00:56-07:00|[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|GMOTD|2021-03-20 02:16:48+00:00|2021-03-19 19:16:48-07:00|[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|GMOTD|2021-03-20 02:16:48+00:00|2021-03-19 19:16:48-07:00|[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|GMOTD|2021-03-30 04:13:18+00:00|2021-03-29 21:13:18-07:00|[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Sep 30 13:31:24 ewj-desktop EQ__Unknown|GMOTD|2021-03-30 04:13:18+00:00|2021-03-29 21:13:18-07:00|[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|FTE: Vessel Drozlin engages Azleep|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|FTE: Vessel Drozlin engages Azleep|2021-05-31 23:05:42+00:00|2021-05-31 16:05:42-07:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:06:09+00:00|2021-05-31 16:06:09-07:00|[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:06:09+00:00|2021-05-31 16:06:09-07:00|[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD (Slain Message): Vessel Drozlin|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD (Slain Message): Vessel Drozlin|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Player Slain!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Player Slain!|2021-05-31 23:09:18+00:00|2021-05-31 16:09:18-07:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|FTE: Verina Tomb engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|FTE: Verina Tomb engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD (Slain Message): Verina Tomb|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD (Slain Message): Verina Tomb|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|FTE: Dain Frostreaver IV engages Nightadder|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|FTE: Dain Frostreaver IV engages Nightadder|2021-08-13 05:50:23+00:00|2021-08-12 22:50:23-07:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:39+00:00|2021-08-12 22:30:39-07:00|[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:39+00:00|2021-08-12 22:30:39-07:00|[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:43+00:00|2021-08-12 22:30:43-07:00|[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:43+00:00|2021-08-12 22:30:43-07:00|[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:48+00:00|2021-08-12 22:30:48-07:00|[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:48+00:00|2021-08-12 22:30:48-07:00|[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:31:16+00:00|2021-08-12 22:31:16-07:00|[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:31:16+00:00|2021-08-12 22:31:16-07:00|[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|FTE: Severilous engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|FTE: Severilous engages Erenion|2021-05-22 04:38:14+00:00|2021-05-21 21:38:14-07:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:45+00:00|2021-05-21 21:38:45-07:00|[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:39:25+00:00|2021-05-21 21:39:25-07:00|[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD (Slain Message): Severilous|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD (Slain Message): Severilous|2021-05-22 04:40:49+00:00|2021-05-21 21:40:49-07:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Cazic Thule spawn!|2022-08-13 22:24:40+00:00|2022-08-13 15:24:40-07:00|[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Cazic Thule spawn!|2022-08-13 22:24:40+00:00|2022-08-13 15:24:40-07:00|[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Earthquake!|2022-02-19 20:34:30+00:00|2022-02-19 13:34:30-07:00|[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Earthquake!|2022-02-19 20:34:30+00:00|2022-02-19 13:34:30-07:00|[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:32+00:00|2021-08-14 17:04:32-07:00|[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:32+00:00|2021-08-14 17:04:32-07:00|[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:43+00:00|2021-08-14 17:04:43-07:00|[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:43+00:00|2021-08-14 17:04:43-07:00|[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Player Slain!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Player Slain!|2021-08-15 00:07:18+00:00|2021-08-14 17:07:18-07:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-10000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-10000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-1000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-1000, Value=687|2022-09-21 23:47:54+00:00|2022-09-21 16:47:54-07:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-100, Value=94|2022-09-18 21:14:42+00:00|2022-09-18 14:14:42-07:00|[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-100, Value=94|2022-09-18 21:14:42+00:00|2022-09-18 14:14:42-07:00|[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:41:50+00:00|2022-09-18 16:41:50-07:00|[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:41:50+00:00|2022-09-18 16:41:50-07:00|[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:42:34+00:00|2022-09-18 16:42:34-07:00|[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:42:34+00:00|2022-09-18 16:42:34-07:00|[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:42:36+00:00|2022-09-18 16:42:36-07:00|[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:42:36+00:00|2022-09-18 16:42:36-07:00|[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|2022-09-18 16:47:20-07:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD|2022-09-18 22:22:41+00:00|2022-09-18 15:22:41-07:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD|2021-05-20 04:14:16+00:00|2021-05-19 21:14:16-07:00|[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD|2021-05-20 04:14:16+00:00|2021-05-19 21:14:16-07:00|[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD|2021-05-20 04:15:49+00:00|2021-05-19 21:15:49-07:00|[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD|2021-05-20 04:15:49+00:00|2021-05-19 21:15:49-07:00|[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD|2021-07-03 08:19:27+00:00|2021-07-03 01:19:27-07:00|[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD|2021-07-03 08:19:27+00:00|2021-07-03 01:19:27-07:00|[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD|2021-07-05 21:00:56+00:00|2021-07-05 14:00:56-07:00|[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|TOD|2021-07-05 21:00:56+00:00|2021-07-05 14:00:56-07:00|[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|GMOTD|2021-03-20 02:16:48+00:00|2021-03-19 19:16:48-07:00|[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|GMOTD|2021-03-20 02:16:48+00:00|2021-03-19 19:16:48-07:00|[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|GMOTD|2021-03-30 04:13:18+00:00|2021-03-29 21:13:18-07:00|[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Sep 30 13:32:50 ewj-desktop EQ__|Unknown|GMOTD|2021-03-30 04:13:18+00:00|2021-03-29 21:13:18-07:00|[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Sep 30 14:12:37 FourBee rngd[514]: stats: bits received from HRNG source: 2240064
+Sep 30 14:12:37 FourBee rngd[514]: stats: bits sent to kernel pool: 2188192
+Sep 30 14:12:37 FourBee rngd[514]: stats: entropy added to kernel pool: 2188192
+Sep 30 14:12:37 FourBee rngd[514]: stats: FIPS 140-2 successes: 112
+Sep 30 14:12:37 FourBee rngd[514]: stats: FIPS 140-2 failures: 0
+Sep 30 14:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Monobit: 0
+Sep 30 14:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Poker: 0
+Sep 30 14:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Runs: 0
+Sep 30 14:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Long run: 0
+Sep 30 14:12:37 FourBee rngd[514]: stats: FIPS 140-2(2001-10-10) Continuous run: 0
+Sep 30 14:12:37 FourBee rngd[514]: stats: HRNG source speed: (min=376.833; avg=547.785; max=553.137)Kibits/s
+Sep 30 14:12:37 FourBee rngd[514]: stats: FIPS tests speed: (min=22.572; avg=26.919; max=65.097)Mibits/s
+Sep 30 14:12:37 FourBee rngd[514]: stats: Lowest ready-buffers level: 2
+Sep 30 14:12:37 FourBee rngd[514]: stats: Entropy starvations: 0
+Sep 30 14:12:37 FourBee rngd[514]: stats: Time spent starving for entropy: (min=0; avg=0.000; max=0)us
+Sep 30 14:17:01 FourBee CRON[8452]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:05:42+00:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:05:42+00:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|FTE: Vessel Drozlin engages Azleep|2021-05-31 23:05:42+00:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|FTE: Vessel Drozlin engages Azleep|2021-05-31 23:05:42+00:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:06:09+00:00|[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:06:09+00:00|[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD (Slain Message): Vessel Drozlin|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD (Slain Message): Vessel Drozlin|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Player Slain!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Player Slain!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|FTE: Verina Tomb engages Erenion|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|FTE: Verina Tomb engages Erenion|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:45+00:00|[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:45+00:00|[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:39:25+00:00|[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:39:25+00:00|[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD (Slain Message): Verina Tomb|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD (Slain Message): Verina Tomb|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:50:23+00:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:50:23+00:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|FTE: Dain Frostreaver IV engages Nightadder|2021-08-13 05:50:23+00:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|FTE: Dain Frostreaver IV engages Nightadder|2021-08-13 05:50:23+00:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:39+00:00|[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:39+00:00|[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:43+00:00|[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:43+00:00|[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:48+00:00|[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:48+00:00|[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:31:16+00:00|[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:31:16+00:00|[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|FTE: Severilous engages Erenion|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|FTE: Severilous engages Erenion|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:45+00:00|[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:45+00:00|[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:39:25+00:00|[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:39:25+00:00|[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Severilous spawn!|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD (Slain Message): Severilous|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD (Slain Message): Severilous|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Cazic Thule spawn!|2022-08-13 22:24:40+00:00|[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Cazic Thule spawn!|2022-08-13 22:24:40+00:00|[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Earthquake!|2022-02-19 20:34:30+00:00|[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Earthquake!|2022-02-19 20:34:30+00:00|[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:32+00:00|[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:32+00:00|[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:43+00:00|[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:43+00:00|[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:07:18+00:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Master Yael spawn!|2021-08-15 00:07:18+00:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Player Slain!|2021-08-15 00:07:18+00:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Player Slain!|2021-08-15 00:07:18+00:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-10000, Value=687|2022-09-21 23:47:54+00:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-10000, Value=687|2022-09-21 23:47:54+00:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-1000, Value=687|2022-09-21 23:47:54+00:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-1000, Value=687|2022-09-21 23:47:54+00:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-100, Value=94|2022-09-18 21:14:42+00:00|[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Random roll: Azleep, 0-100, Value=94|2022-09-18 21:14:42+00:00|[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 22:22:41+00:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 22:22:41+00:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:41:50+00:00|[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:41:50+00:00|[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:42:34+00:00|[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:42:34+00:00|[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:42:36+00:00|[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:42:36+00:00|[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD|2022-09-18 22:22:41+00:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD|2022-09-18 22:22:41+00:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD|2021-05-20 04:14:16+00:00|[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD|2021-05-20 04:14:16+00:00|[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD|2021-05-20 04:15:49+00:00|[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD|2021-05-20 04:15:49+00:00|[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD|2021-07-03 08:19:27+00:00|[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD|2021-07-03 08:19:27+00:00|[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD|2021-07-05 21:00:56+00:00|[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|TOD|2021-07-05 21:00:56+00:00|[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|GMOTD|2021-03-20 02:16:48+00:00|[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|GMOTD|2021-03-20 02:16:48+00:00|[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|GMOTD|2021-03-30 04:13:18+00:00|[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Sep 30 14:25:34 ewj-desktop EQ__|Unknown|GMOTD|2021-03-30 04:13:18+00:00|[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Sep 30 14:26:20 FourBee systemd[1]: Started Session 96 of user pi.
