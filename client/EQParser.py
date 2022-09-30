@@ -1,6 +1,9 @@
 import asyncio
 import pywin32_bootstrap
 import win32console
+import logging
+import logging.handlers
+
 
 import EverquestLogFile
 import config
@@ -10,6 +13,7 @@ import util
 from util import starprint
 from ParseTarget import *
 
+import remote_host
 
 #################################################################################################
 
@@ -53,6 +57,14 @@ class EQParser(EverquestLogFile.EverquestLogFile):
             TOD_Parser(),
             GMOTD_Parser(),
         ]
+
+        # set up a custom logger to use for rsyslog comms
+        logging.basicConfig(level=logging.INFO)
+        self.eq_logger = logging.getLogger('EQ')
+
+        # set up a log handler that sends output to the rsyslog service at the indicated address
+        log_handler = logging.handlers.SysLogHandler(address=(remote_host.REMOTE_HOST, remote_host.REMOTE_PORT))
+        self.eq_logger.addHandler(log_handler)
 
     def set_char_name(self, name: str) -> None:
         """
@@ -122,12 +134,15 @@ class EQParser(EverquestLogFile.EverquestLogFile):
                 starprint(f'Not currently parsing')
 
         # check current line for matches in any of the list of Parser objects
+        # if we find a match, then send the event report to the remote aggregator
         for parse_target in self.parse_target_list:
             if parse_target.matches(line):
                 report_str = parse_target.report()
+                # print(report_str, end='')
 
-                # todo - process the report information in some manner
-                print(report_str, end='')
+                # send the info to the remote log aggregator, prepended with a unique string to make it easier to parse
+                logmarker = remote_host.LOGMARKER
+                self.eq_logger.info(f'{logmarker}{report_str}')
 
     #
     #
@@ -141,6 +156,7 @@ class EQParser(EverquestLogFile.EverquestLogFile):
         starprint('')
         starprint('EQParser:  Help', '^')
         starprint('')
+        starprint(f'Sending parsing event reports to: {remote_host.REMOTE_HOST}:{remote_host.REMOTE_PORT}')
         starprint('User commands are accomplished by sending a tell to the below fictitious player names:')
         starprint('')
         starprint('General')

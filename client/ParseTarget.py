@@ -37,7 +37,7 @@ class ParseTarget:
         self._utc_datetime = None
 
         # parsing player name and field separation character, used in the report() function
-        self.parsing_player = 'Parsing Playerename not set'
+        self.parsing_player = 'Unknown'
         self.field_separator = '|'
 
     #
