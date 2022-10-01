@@ -44,6 +44,7 @@ class EQSysLogParser(LogFile.LogFile):
             utc_timestamp_str = m.group('utc_timestamp')
             utc_timestamp_datetime = datetime.fromisoformat(utc_timestamp_str)
 
+            # todo - do something useful with the data
             print(f'{charname} --- {short_desc} --- {utc_timestamp_str}={utc_timestamp_datetime} --- {eq_log_line}')
 
 
