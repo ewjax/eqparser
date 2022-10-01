@@ -1,0 +1,360 @@
+Oct  1 01:29:08 ip-172-31-8-150 systemd: Stopping System Logging Service...
+Oct  1 01:29:08 ip-172-31-8-150 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.1" x-pid="19143" x-info="http://www.rsyslog.com"] exiting on signal 15.
+Oct  1 01:29:08 ip-172-31-8-150 systemd: Stopped System Logging Service.
+Oct  1 01:29:08 ip-172-31-8-150 systemd: Starting System Logging Service...
+Oct  1 01:29:08 ip-172-31-8-150 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.1" x-pid="20728" x-info="http://www.rsyslog.com"] start
+Oct  1 01:29:08 ip-172-31-8-150 sudo: pam_unix(sudo:session): session closed for user root
+Oct  1 01:29:08 ip-172-31-8-150 systemd: Started System Logging Service.
+Oct  1 01:29:08 ip-172-31-8-150 rsyslogd: warning: ~ action is deprecated, consider using the 'stop' statement instead [v8.24.0-57.amzn2.2.0.1 try http://www.rsyslog.com/e/2307 ]
+Oct  1 01:29:08 ip-172-31-8-150 rsyslogd: error during config processing: STOP is followed by unreachable statements!  [v8.24.0-57.amzn2.2.0.1 try http://www.rsyslog.com/e/2207 ]
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:05:42+00:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|FTE: Vessel Drozlin engages Azleep|2021-05-31 23:05:42+00:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:06:09+00:00|[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD (Slain Message): Vessel Drozlin|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Player Slain!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|FTE: Verina Tomb engages Erenion|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:45+00:00|[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD (Slain Message): Verina Tomb|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:39:25+00:00|[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:50:23+00:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|FTE: Dain Frostreaver IV engages Nightadder|2021-08-13 05:50:23+00:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:39+00:00|[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:43+00:00|[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:48+00:00|[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:31:16+00:00|[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|FTE: Severilous engages Erenion|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:45+00:00|[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Severilous spawn!|2021-05-22 04:39:25+00:00|[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Severilous spawn!|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD (Slain Message): Severilous|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Cazic Thule spawn!|2022-08-13 22:24:40+00:00|[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Earthquake!|2022-02-19 20:34:30+00:00|[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:32+00:00|[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:43+00:00|[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Master Yael spawn!|2021-08-15 00:07:18+00:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Player Slain!|2021-08-15 00:07:18+00:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Random roll: Azleep, 0-10000, Value=687|2022-09-21 23:47:54+00:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Random roll: Azleep, 0-1000, Value=687|2022-09-21 23:47:54+00:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Random roll: Azleep, 0-100, Value=94|2022-09-18 21:14:42+00:00|[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 22:22:41+00:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 23:41:50+00:00|[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 23:42:34+00:00|[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 23:42:36+00:00|[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD|2022-09-18 22:22:41+00:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD|2021-05-20 04:14:16+00:00|[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD|2021-05-20 04:15:49+00:00|[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD|2021-07-03 08:19:27+00:00|[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD|2021-07-05 21:00:56+00:00|[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|GMOTD|2021-03-20 02:16:48+00:00|[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Oct  1 01:29:58 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|GMOTD|2021-03-30 04:13:18+00:00|[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Oct  1 01:30:01 ip-172-31-8-150 systemd: Created slice User Slice of root.
+Oct  1 01:30:01 ip-172-31-8-150 systemd: Started Session 366 of user root.
+Oct  1 01:30:01 ip-172-31-8-150 CROND[20748]: (root) CMD (/usr/lib64/sa/sa1 1 1)
+Oct  1 01:30:01 ip-172-31-8-150 systemd: Removed slice User Slice of root.
+Oct  1 01:30:15 ip-172-31-8-150 sshd[20753]: Accepted publickey for ec2-user from 72.195.201.90 port 10519 ssh2: RSA SHA256:02dALrHXIOcvQwJv2xbYEp8h9NIowl+THrtJhTgv5ZU
+Oct  1 01:30:15 ip-172-31-8-150 systemd: Started Session 367 of user ec2-user.
+Oct  1 01:30:15 ip-172-31-8-150 systemd-logind: New session 367 of user ec2-user.
+Oct  1 01:30:15 ip-172-31-8-150 sshd[20753]: pam_unix(sshd:session): session opened for user ec2-user by (uid=0)
+Oct  1 01:30:54 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 125430ms.
+Oct  1 01:30:59 ip-172-31-8-150 sshd[20790]: Accepted publickey for ec2-user from 72.195.201.90 port 10567 ssh2: RSA SHA256:02dALrHXIOcvQwJv2xbYEp8h9NIowl+THrtJhTgv5ZU
+Oct  1 01:30:59 ip-172-31-8-150 systemd: Started Session 368 of user ec2-user.
+Oct  1 01:30:59 ip-172-31-8-150 systemd-logind: New session 368 of user ec2-user.
+Oct  1 01:30:59 ip-172-31-8-150 sshd[20790]: pam_unix(sshd:session): session opened for user ec2-user by (uid=0)
+Oct  1 01:32:01 ip-172-31-8-150 sshd[20790]: pam_unix(sshd:session): session closed for user ec2-user
+Oct  1 01:32:01 ip-172-31-8-150 systemd-logind: Removed session 368.
+Oct  1 01:32:33 ip-172-31-8-150 sshd[20829]: Invalid user admin from 38.125.205.38 port 39352
+Oct  1 01:32:33 ip-172-31-8-150 sshd[20829]: input_userauth_request: invalid user admin [preauth]
+Oct  1 01:32:33 ip-172-31-8-150 sshd[20829]: Connection closed by 38.125.205.38 port 39352 [preauth]
+Oct  1 01:33:00 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 112790ms.
+Oct  1 01:34:53 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 128820ms.
+Oct  1 01:37:02 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 122990ms.
+Oct  1 01:39:04 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 129620ms.
+Oct  1 01:40:01 ip-172-31-8-150 systemd: Created slice User Slice of root.
+Oct  1 01:40:01 ip-172-31-8-150 systemd: Started Session 369 of user root.
+Oct  1 01:40:01 ip-172-31-8-150 CROND[20841]: (root) CMD (/usr/lib64/sa/sa1 1 1)
+Oct  1 01:40:01 ip-172-31-8-150 systemd: Removed slice User Slice of root.
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿVessel Drozlin spawn!ÿ2021-05-31 23:05:42+00:00ÿ[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿFTE: Vessel Drozlin engages Azleepÿ2021-05-31 23:05:42+00:00ÿ[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿVessel Drozlin spawn!ÿ2021-05-31 23:06:09+00:00ÿ[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿVessel Drozlin spawn!ÿ2021-05-31 23:09:18+00:00ÿ[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿVessel Drozlin spawn!ÿ2021-05-31 23:09:18+00:00ÿ[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿTOD (Slain Message): Vessel Drozlinÿ2021-05-31 23:09:18+00:00ÿ[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿVessel Drozlin spawn!ÿ2021-05-31 23:09:18+00:00ÿ[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿPlayer Slain!ÿ2021-05-31 23:09:18+00:00ÿ[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿVerina Tomb spawn!ÿ2021-05-22 04:38:14+00:00ÿ[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿFTE: Verina Tomb engages Erenionÿ2021-05-22 04:38:14+00:00ÿ[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿVerina Tomb spawn!ÿ2021-05-22 04:40:49+00:00ÿ[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿVerina Tomb spawn!ÿ2021-05-22 04:38:45+00:00ÿ[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿTOD (Slain Message): Verina Tombÿ2021-05-22 04:40:49+00:00ÿ[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿVerina Tomb spawn!ÿ2021-05-22 04:39:25+00:00ÿ[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿDain Frostreaver IV spawn!ÿ2021-08-13 05:50:23+00:00ÿ[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿFTE: Dain Frostreaver IV engages Nightadderÿ2021-08-13 05:50:23+00:00ÿ[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿDain Frostreaver IV spawn!ÿ2021-08-13 05:30:39+00:00ÿ[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿDain Frostreaver IV spawn!ÿ2021-08-13 05:30:43+00:00ÿ[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿDain Frostreaver IV spawn!ÿ2021-08-13 05:30:48+00:00ÿ[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿDain Frostreaver IV spawn!ÿ2021-08-13 05:31:16+00:00ÿ[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿSeverilous spawn!ÿ2021-05-22 04:38:14+00:00ÿ[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿFTE: Severilous engages Erenionÿ2021-05-22 04:38:14+00:00ÿ[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿSeverilous spawn!ÿ2021-05-22 04:38:45+00:00ÿ[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿSeverilous spawn!ÿ2021-05-22 04:39:25+00:00ÿ[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿSeverilous spawn!ÿ2021-05-22 04:40:49+00:00ÿ[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿTOD (Slain Message): Severilousÿ2021-05-22 04:40:49+00:00ÿ[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿCazic Thule spawn!ÿ2022-08-13 22:24:40+00:00ÿ[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿEarthquake!ÿ2022-02-19 20:34:30+00:00ÿ[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿMaster Yael spawn!ÿ2021-08-15 00:04:32+00:00ÿ[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿMaster Yael spawn!ÿ2021-08-15 00:04:43+00:00ÿ[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿMaster Yael spawn!ÿ2021-08-15 00:07:18+00:00ÿ[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿPlayer Slain!ÿ2021-08-15 00:07:18+00:00ÿ[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿRandom roll: Azleep, 0-10000, Value=687ÿ2022-09-21 23:47:54+00:00ÿ[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿRandom roll: Azleep, 0-1000, Value=687ÿ2022-09-21 23:47:54+00:00ÿ[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿRandom roll: Azleep, 0-100, Value=94ÿ2022-09-18 21:14:42+00:00ÿ[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿGratssÿ2022-09-18 22:22:41+00:00ÿ[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿGratssÿ2022-09-18 23:41:50+00:00ÿ[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿGratssÿ2022-09-18 23:42:34+00:00ÿ[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿGratssÿ2022-09-18 23:42:36+00:00ÿ[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿGratssÿ2022-09-18 23:47:20+00:00ÿ[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿGratssÿ2022-09-18 23:47:20+00:00ÿ[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿTODÿ2022-09-18 22:22:41+00:00ÿ[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿTODÿ2021-05-20 04:14:16+00:00ÿ[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿTODÿ2021-05-20 04:15:49+00:00ÿ[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿTODÿ2021-07-03 08:19:27+00:00ÿ[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿTODÿ2021-07-05 21:00:56+00:00ÿ[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿGMOTDÿ2021-03-20 02:16:48+00:00ÿ[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Oct  1 01:40:59 ip72-195-201-90.ph.ph.cox.net EQ__ÿUnknownÿGMOTDÿ2021-03-30 04:13:18+00:00ÿ[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Oct  1 01:41:14 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 127540ms.
+Oct  1 01:42:24 ip-172-31-8-150 sshd[20848]: Accepted publickey for ec2-user from 72.195.201.90 port 11280 ssh2: RSA SHA256:02dALrHXIOcvQwJv2xbYEp8h9NIowl+THrtJhTgv5ZU
+Oct  1 01:42:24 ip-172-31-8-150 systemd: Started Session 370 of user ec2-user.
+Oct  1 01:42:24 ip-172-31-8-150 systemd-logind: New session 370 of user ec2-user.
+Oct  1 01:42:24 ip-172-31-8-150 sshd[20848]: pam_unix(sshd:session): session opened for user ec2-user by (uid=0)
+Oct  1 01:43:22 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 114220ms.
+Oct  1 01:43:27 ip-172-31-8-150 sshd[20848]: pam_unix(sshd:session): session closed for user ec2-user
+Oct  1 01:43:27 ip-172-31-8-150 systemd-logind: Removed session 370.
+Oct  1 01:44:30 ip-172-31-8-150 dhclient[2719]: DHCPREQUEST on eth0 to 172.31.0.1 port 67 (xid=0x756919ab)
+Oct  1 01:44:30 ip-172-31-8-150 dhclient[2719]: DHCPACK from 172.31.0.1 (xid=0x756919ab)
+Oct  1 01:44:31 ip-172-31-8-150 NET: dhclient: Locked /run/dhclient/resolv.lock
+Oct  1 01:44:31 ip-172-31-8-150 dhclient[2719]: bound to 172.31.8.150 -- renewal in 1489 seconds.
+Oct  1 01:44:31 ip-172-31-8-150 ec2net: [get_meta] Querying IMDS for meta-data/network/interfaces/macs/02:00:9f:67:65:b4/local-ipv4s
+Oct  1 01:44:31 ip-172-31-8-150 ec2net: [get_meta] Getting token for IMDSv2.
+Oct  1 01:44:31 ip-172-31-8-150 ec2net: [get_meta] Trying to get http://169.254.169.254/latest/meta-data/network/interfaces/macs/02:00:9f:67:65:b4/local-ipv4s
+Oct  1 01:44:31 ip-172-31-8-150 ec2net: [remove_aliases] Removing aliases of eth0
+Oct  1 01:44:52 ip-172-31-8-150 sshd[20939]: Accepted publickey for ec2-user from 72.195.201.90 port 11440 ssh2: RSA SHA256:02dALrHXIOcvQwJv2xbYEp8h9NIowl+THrtJhTgv5ZU
+Oct  1 01:44:52 ip-172-31-8-150 systemd: Started Session 371 of user ec2-user.
+Oct  1 01:44:52 ip-172-31-8-150 systemd-logind: New session 371 of user ec2-user.
+Oct  1 01:44:52 ip-172-31-8-150 sshd[20939]: pam_unix(sshd:session): session opened for user ec2-user by (uid=0)
+Oct  1 01:45:16 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 112570ms.
+Oct  1 01:46:02 ip-172-31-8-150 sshd[20939]: pam_unix(sshd:session): session closed for user ec2-user
+Oct  1 01:46:02 ip-172-31-8-150 systemd-logind: Removed session 371.
+Oct  1 01:46:52 ip-172-31-8-150 sshd[20978]: Accepted publickey for ec2-user from 72.195.201.90 port 11567 ssh2: RSA SHA256:02dALrHXIOcvQwJv2xbYEp8h9NIowl+THrtJhTgv5ZU
+Oct  1 01:46:52 ip-172-31-8-150 systemd: Started Session 372 of user ec2-user.
+Oct  1 01:46:52 ip-172-31-8-150 systemd-logind: New session 372 of user ec2-user.
+Oct  1 01:46:52 ip-172-31-8-150 sshd[20978]: pam_unix(sshd:session): session opened for user ec2-user by (uid=0)
+Oct  1 01:47:09 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 110410ms.
+Oct  1 01:48:03 ip-172-31-8-150 sshd[20978]: pam_unix(sshd:session): session closed for user ec2-user
+Oct  1 01:48:03 ip-172-31-8-150 systemd-logind: Removed session 372.
+Oct  1 01:48:59 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 123370ms.
+Oct  1 01:49:54 ip-172-31-8-150 sshd[21018]: Accepted publickey for ec2-user from 72.195.201.90 port 11750 ssh2: RSA SHA256:02dALrHXIOcvQwJv2xbYEp8h9NIowl+THrtJhTgv5ZU
+Oct  1 01:49:54 ip-172-31-8-150 systemd: Started Session 373 of user ec2-user.
+Oct  1 01:49:54 ip-172-31-8-150 systemd-logind: New session 373 of user ec2-user.
+Oct  1 01:49:54 ip-172-31-8-150 sshd[21018]: pam_unix(sshd:session): session opened for user ec2-user by (uid=0)
+Oct  1 01:50:01 ip-172-31-8-150 systemd: Created slice User Slice of root.
+Oct  1 01:50:01 ip-172-31-8-150 systemd: Started Session 374 of user root.
+Oct  1 01:50:01 ip-172-31-8-150 CROND[21055]: (root) CMD (/usr/lib64/sa/sa1 1 1)
+Oct  1 01:50:01 ip-172-31-8-150 systemd: Removed slice User Slice of root.
+Oct  1 01:50:56 ip-172-31-8-150 sshd[21062]: reverse mapping checking getaddrinfo for 200-205-245-243.matrix.com.br [200.205.245.243] failed - POSSIBLE BREAK-IN ATTEMPT!
+Oct  1 01:50:56 ip-172-31-8-150 sshd[21062]: Invalid user admin from 200.205.245.243 port 44016
+Oct  1 01:50:56 ip-172-31-8-150 sshd[21062]: input_userauth_request: invalid user admin [preauth]
+Oct  1 01:50:56 ip-172-31-8-150 sshd[21062]: Connection closed by 200.205.245.243 port 44016 [preauth]
+Oct  1 01:50:58 ip-172-31-8-150 sshd[21018]: pam_unix(sshd:session): session closed for user ec2-user
+Oct  1 01:50:58 ip-172-31-8-150 systemd-logind: Removed session 373.
+Oct  1 01:51:03 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 123990ms.
+Oct  1 01:52:44 ip-172-31-8-150 sshd[21067]: Accepted publickey for ec2-user from 72.195.201.90 port 11936 ssh2: RSA SHA256:02dALrHXIOcvQwJv2xbYEp8h9NIowl+THrtJhTgv5ZU
+Oct  1 01:52:44 ip-172-31-8-150 systemd: Started Session 375 of user ec2-user.
+Oct  1 01:52:44 ip-172-31-8-150 systemd-logind: New session 375 of user ec2-user.
+Oct  1 01:52:44 ip-172-31-8-150 sshd[21067]: pam_unix(sshd:session): session opened for user ec2-user by (uid=0)
+Oct  1 01:53:07 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 117470ms.
+Oct  1 01:54:34 ip-172-31-8-150 sshd[21067]: pam_unix(sshd:session): session closed for user ec2-user
+Oct  1 01:54:34 ip-172-31-8-150 systemd-logind: Removed session 375.
+Oct  1 01:55:04 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 129890ms.
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownVessel Drozlin spawn!2021-05-31 23:05:42+00:00[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownFTE: Vessel Drozlin engages Azleep2021-05-31 23:05:42+00:00[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownVessel Drozlin spawn!2021-05-31 23:06:09+00:00[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownVessel Drozlin spawn!2021-05-31 23:09:18+00:00[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownVessel Drozlin spawn!2021-05-31 23:09:18+00:00[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownTOD (Slain Message): Vessel Drozlin2021-05-31 23:09:18+00:00[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownVessel Drozlin spawn!2021-05-31 23:09:18+00:00[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownPlayer Slain!2021-05-31 23:09:18+00:00[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownVerina Tomb spawn!2021-05-22 04:38:14+00:00[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownFTE: Verina Tomb engages Erenion2021-05-22 04:38:14+00:00[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownVerina Tomb spawn!2021-05-22 04:40:49+00:00[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownVerina Tomb spawn!2021-05-22 04:38:45+00:00[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownVerina Tomb spawn!2021-05-22 04:39:25+00:00[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownTOD (Slain Message): Verina Tomb2021-05-22 04:40:49+00:00[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownDain Frostreaver IV spawn!2021-08-13 05:50:23+00:00[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownFTE: Dain Frostreaver IV engages Nightadder2021-08-13 05:50:23+00:00[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownDain Frostreaver IV spawn!2021-08-13 05:30:39+00:00[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownDain Frostreaver IV spawn!2021-08-13 05:30:43+00:00[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownDain Frostreaver IV spawn!2021-08-13 05:30:48+00:00[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownDain Frostreaver IV spawn!2021-08-13 05:31:16+00:00[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownSeverilous spawn!2021-05-22 04:38:14+00:00[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownFTE: Severilous engages Erenion2021-05-22 04:38:14+00:00[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownSeverilous spawn!2021-05-22 04:38:45+00:00[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownSeverilous spawn!2021-05-22 04:39:25+00:00[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownSeverilous spawn!2021-05-22 04:40:49+00:00[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownTOD (Slain Message): Severilous2021-05-22 04:40:49+00:00[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownCazic Thule spawn!2022-08-13 22:24:40+00:00[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownEarthquake!2022-02-19 20:34:30+00:00[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownMaster Yael spawn!2021-08-15 00:04:32+00:00[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownMaster Yael spawn!2021-08-15 00:04:43+00:00[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownMaster Yael spawn!2021-08-15 00:07:18+00:00[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownPlayer Slain!2021-08-15 00:07:18+00:00[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownRandom roll: Azleep, 0-10000, Value=6872022-09-21 23:47:54+00:00[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownRandom roll: Azleep, 0-1000, Value=6872022-09-21 23:47:54+00:00[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownRandom roll: Azleep, 0-100, Value=942022-09-18 21:14:42+00:00[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownGratss2022-09-18 22:22:41+00:00[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownGratss2022-09-18 23:41:50+00:00[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownGratss2022-09-18 23:42:34+00:00[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownGratss2022-09-18 23:42:36+00:00[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownGratss2022-09-18 23:47:20+00:00[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownGratss2022-09-18 23:47:20+00:00[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownTOD2022-09-18 22:22:41+00:00[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownTOD2021-05-20 04:14:16+00:00[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownTOD2021-05-20 04:15:49+00:00[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownTOD2021-07-03 08:19:27+00:00[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownTOD2021-07-05 21:00:56+00:00[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownGMOTD2021-03-20 02:16:48+00:00[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Oct  1 01:55:22 ip72-195-201-90.ph.ph.cox.net EQ__UnknownGMOTD2021-03-30 04:13:18+00:00[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Oct  1 01:55:52 ip-172-31-8-150 sshd[21108]: Accepted publickey for ec2-user from 72.195.201.90 port 12125 ssh2: RSA SHA256:02dALrHXIOcvQwJv2xbYEp8h9NIowl+THrtJhTgv5ZU
+Oct  1 01:55:52 ip-172-31-8-150 systemd: Started Session 376 of user ec2-user.
+Oct  1 01:55:52 ip-172-31-8-150 systemd-logind: New session 376 of user ec2-user.
+Oct  1 01:55:52 ip-172-31-8-150 sshd[21108]: pam_unix(sshd:session): session opened for user ec2-user by (uid=0)
+Oct  1 01:56:56 ip-172-31-8-150 sshd[21108]: pam_unix(sshd:session): session closed for user ec2-user
+Oct  1 01:56:56 ip-172-31-8-150 systemd-logind: Removed session 376.
+Oct  1 01:57:14 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 120790ms.
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Vessel Drozlin spawn!#0002021-05-31 23:05:42+00:00#000[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000FTE: Vessel Drozlin engages Azleep#0002021-05-31 23:05:42+00:00#000[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Vessel Drozlin spawn!#0002021-05-31 23:06:09+00:00#000[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Vessel Drozlin spawn!#0002021-05-31 23:09:18+00:00#000[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Vessel Drozlin spawn!#0002021-05-31 23:09:18+00:00#000[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000TOD (Slain Message): Vessel Drozlin#0002021-05-31 23:09:18+00:00#000[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Vessel Drozlin spawn!#0002021-05-31 23:09:18+00:00#000[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Player Slain!#0002021-05-31 23:09:18+00:00#000[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Verina Tomb spawn!#0002021-05-22 04:38:14+00:00#000[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000FTE: Verina Tomb engages Erenion#0002021-05-22 04:38:14+00:00#000[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Dain Frostreaver IV spawn!#0002021-08-13 05:30:39+00:00#000[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Verina Tomb spawn!#0002021-05-22 04:38:45+00:00#000[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Dain Frostreaver IV spawn!#0002021-08-13 05:30:43+00:00#000[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Verina Tomb spawn!#0002021-05-22 04:39:25+00:00#000[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Dain Frostreaver IV spawn!#0002021-08-13 05:30:48+00:00#000[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Verina Tomb spawn!#0002021-05-22 04:40:49+00:00#000[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000TOD (Slain Message): Verina Tomb#0002021-05-22 04:40:49+00:00#000[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Dain Frostreaver IV spawn!#0002021-08-13 05:50:23+00:00#000[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000FTE: Dain Frostreaver IV engages Nightadder#0002021-08-13 05:50:23+00:00#000[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Dain Frostreaver IV spawn!#0002021-08-13 05:31:16+00:00#000[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Severilous spawn!#0002021-05-22 04:38:14+00:00#000[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000FTE: Severilous engages Erenion#0002021-05-22 04:38:14+00:00#000[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Severilous spawn!#0002021-05-22 04:38:45+00:00#000[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Severilous spawn!#0002021-05-22 04:39:25+00:00#000[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Severilous spawn!#0002021-05-22 04:40:49+00:00#000[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000TOD (Slain Message): Severilous#0002021-05-22 04:40:49+00:00#000[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Cazic Thule spawn!#0002022-08-13 22:24:40+00:00#000[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Earthquake!#0002022-02-19 20:34:30+00:00#000[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Master Yael spawn!#0002021-08-15 00:04:32+00:00#000[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Master Yael spawn!#0002021-08-15 00:04:43+00:00#000[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Master Yael spawn!#0002021-08-15 00:07:18+00:00#000[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Player Slain!#0002021-08-15 00:07:18+00:00#000[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Random roll: Azleep, 0-10000, Value=687#0002022-09-21 23:47:54+00:00#000[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Random roll: Azleep, 0-1000, Value=687#0002022-09-21 23:47:54+00:00#000[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Random roll: Azleep, 0-100, Value=94#0002022-09-18 21:14:42+00:00#000[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Gratss#0002022-09-18 22:22:41+00:00#000[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Gratss#0002022-09-18 23:41:50+00:00#000[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Gratss#0002022-09-18 23:42:34+00:00#000[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Gratss#0002022-09-18 23:42:36+00:00#000[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Gratss#0002022-09-18 23:47:20+00:00#000[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000Gratss#0002022-09-18 23:47:20+00:00#000[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000TOD#0002022-09-18 22:22:41+00:00#000[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000TOD#0002021-05-20 04:14:16+00:00#000[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000TOD#0002021-05-20 04:15:49+00:00#000[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000TOD#0002021-07-03 08:19:27+00:00#000[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000TOD#0002021-07-05 21:00:56+00:00#000[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000GMOTD#0002021-03-20 02:16:48+00:00#000[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Oct  1 01:57:26 ip72-195-201-90.ph.ph.cox.net EQ__#000Unknown#000GMOTD#0002021-03-30 04:13:18+00:00#000[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Oct  1 01:58:01 ip-172-31-8-150 sshd[21147]: Accepted publickey for ec2-user from 72.195.201.90 port 12270 ssh2: RSA SHA256:02dALrHXIOcvQwJv2xbYEp8h9NIowl+THrtJhTgv5ZU
+Oct  1 01:58:01 ip-172-31-8-150 systemd: Started Session 377 of user ec2-user.
+Oct  1 01:58:01 ip-172-31-8-150 systemd-logind: New session 377 of user ec2-user.
+Oct  1 01:58:01 ip-172-31-8-150 sshd[21147]: pam_unix(sshd:session): session opened for user ec2-user by (uid=0)
+Oct  1 01:59:15 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 129210ms.
+Oct  1 02:00:01 ip-172-31-8-150 systemd: Created slice User Slice of root.
+Oct  1 02:00:01 ip-172-31-8-150 systemd: Started Session 378 of user root.
+Oct  1 02:00:01 ip-172-31-8-150 CROND[21186]: (root) CMD (/usr/lib64/sa/sa1 1 1)
+Oct  1 02:00:01 ip-172-31-8-150 systemd: Removed slice User Slice of root.
+Oct  1 02:00:06 ip-172-31-8-150 sshd[21147]: pam_unix(sshd:session): session closed for user ec2-user
+Oct  1 02:00:06 ip-172-31-8-150 systemd-logind: Removed session 377.
+Oct  1 02:01:01 ip-172-31-8-150 systemd: Created slice User Slice of root.
+Oct  1 02:01:01 ip-172-31-8-150 systemd: Started Session 379 of user root.
+Oct  1 02:01:01 ip-172-31-8-150 CROND[21195]: (root) CMD (run-parts /etc/cron.hourly)
+Oct  1 02:01:01 ip-172-31-8-150 run-parts(/etc/cron.hourly)[21195]: starting 0anacron
+Oct  1 02:01:01 ip-172-31-8-150 anacron[21205]: Anacron started on 2022-10-01
+Oct  1 02:01:01 ip-172-31-8-150 anacron[21205]: Normal exit (0 jobs run)
+Oct  1 02:01:01 ip-172-31-8-150 run-parts(/etc/cron.hourly)[21207]: finished 0anacron
+Oct  1 02:01:01 ip-172-31-8-150 systemd: Removed slice User Slice of root.
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:05:42+00:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|FTE: Vessel Drozlin engages Azleep|2021-05-31 23:05:42+00:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:06:09+00:00|[Mon May 31 16:06:09 2021] Vessel Drozlin begins to cast a spell.
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin says, 'You may get the Rod of Xolion, but the Crusaders of Greenmist will bury you in this pit!'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD (Slain Message): Vessel Drozlin|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Vessel Drozlin spawn!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Player Slain!|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] You have been slain by Vessel Drozlin!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|FTE: Verina Tomb engages Erenion|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Verina Tomb engages Erenion!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:38:45+00:00|[Fri May 21 21:38:45 2021] Verina Tomb begins to cast a spell.
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Verina Tomb spawn!|2021-05-22 04:39:25+00:00|[Fri May 21 21:39:25 2021] Verina Tomb says 'You will not evade me Leffingwell!'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD (Slain Message): Verina Tomb|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Verina Tomb has been slain by Venann!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:50:23+00:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|FTE: Dain Frostreaver IV engages Nightadder|2021-08-13 05:50:23+00:00|[Thu Aug 12 22:50:23 2021] Dain Frostreaver IV engages Nightadder!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:39+00:00|[Thu Aug 12 22:30:39 2021] Dain Frostreaver IV says 'Several of our greatest officers, including a few veterans from the War of Yesterwinter are assembling just outside our city. Gather your army at once and give this parchment and the ninth ring to Sentry Badian. I will remain inside the city with a few of my troops to defend it against any who might penetrate your defense. May Brell be with you, Raolador.'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:43+00:00|[Thu Aug 12 22:30:43 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Meaners. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:30:48+00:00|[Thu Aug 12 22:30:48 2021] Dain Frostreaver IV says 'The people of Thurgadin are in your debt, Gortex. Please accept the Coldain Hero's Ring as a token of our gratitude. The curse has been removed from the blade as well. I hope you find it useful against our common foes. When you are interested in assisting me further please show me the blade. Until that day, may Brell bless and protect you.'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Dain Frostreaver IV spawn!|2021-08-13 05:31:16+00:00|[Thu Aug 12 22:31:16 2021] Dain Frostreaver IV says, 'My good Azleep, you have served me well. You have flushed out all who sought to oppose me and my people. I am afraid I need to call upon you and your friends one final time. The dissension and treason ran deeper than I had anticipated. Our population has been cleansed, but we lost a full third of our army to the poisonous words of those rebels. In retaliation for your deeds, the Kromrif have made plans to attack us in this, our weakest hour. Can I count on your help outlander?'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|FTE: Severilous engages Erenion|2021-05-22 04:38:14+00:00|[Fri May 21 21:38:14 2021] Severilous engages Erenion!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Severilous spawn!|2021-05-22 04:38:45+00:00|[Fri May 21 21:38:45 2021] Severilous begins to cast a spell.
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Severilous spawn!|2021-05-22 04:39:25+00:00|[Fri May 21 21:39:25 2021] Severilous says 'You will not evade me Leffingwell!'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Severilous spawn!|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD (Slain Message): Severilous|2021-05-22 04:40:49+00:00|[Fri May 21 21:40:49 2021] Severilous has been slain by Venann!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Cazic Thule spawn!|2022-08-13 22:24:40+00:00|[Sat Aug 13 15:24:40 2022] Cazic Thule  shouts 'Denizens of Fear, your master commands you to come forth to his aid!!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Earthquake!|2022-02-19 20:34:30+00:00|[Sat Feb 19 13:34:30 2022] The Gods of Norrath emit a sinister laugh as they toy with their creations. They are reanimating creatures to provide a greater challenge to the mortals
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:32+00:00|[Sat Aug 14 17:04:32 2021] Master Yael begins to cast a spell.
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Master Yael spawn!|2021-08-15 00:04:43+00:00|[Sat Aug 14 17:04:43 2021] Master Yael says 'DOOMSTRESS'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Master Yael spawn!|2021-08-15 00:07:18+00:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Player Slain!|2021-08-15 00:07:18+00:00|[Sat Aug 14 17:07:18 2021] You have been slain by Master Yael!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Random roll: Azleep, 0-10000, Value=687|2022-09-21 23:47:54+00:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 10000, but this time it turned up a 687.
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Random roll: Azleep, 0-1000, Value=687|2022-09-21 23:47:54+00:00|[Wed Sep 21 16:47:54 2022] **It could have been any number from 0 to 1000, but this time it turned up a 687.
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Random roll: Azleep, 0-100, Value=94|2022-09-18 21:14:42+00:00|[Sun Sep 18 14:14:42 2022] **It could have been any number from 0 to 100, but this time it turned up a 94.
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 22:22:41+00:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------gratss-------------------------------------------
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 23:41:50+00:00|[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 23:42:34+00:00|[Sun Sep 18 16:42:34 2022] Sinistrus tells the guild, 'Choker of the Wretched Sinistrus 350 gratss'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 23:42:36+00:00|[Sun Sep 18 16:42:36 2022] Mayyne tells the guild, 'Mayyne Earring of the Frozen Skull 240 closed GRATSS'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Faceguard of Bentos the Hero gratss flexore 175dkp'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|Gratss|2022-09-18 23:47:20+00:00|[Sun Sep 18 16:47:20 2022] Flexore tells the guild, 'Gratss someone Faceguard of Bentos the Hero 175dkp'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD|2022-09-18 22:22:41+00:00|[Sun Sep 18 15:22:41 2022] -------------------------------------------tod-------------------------------------------
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD|2021-05-20 04:14:16+00:00|[Wed May 19 21:14:16 2021] You say to your guild, 'TOD Dread'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD|2021-05-20 04:15:49+00:00|[Wed May 19 21:15:49 2021] You say to your guild, 'tod terror'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD|2021-07-03 08:19:27+00:00|[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|TOD|2021-07-05 21:00:56+00:00|[Mon Jul 05 14:00:56 2021] Entrave tells the guild, 'Zordakalicus Ragefire  ToD ~'
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|GMOTD|2021-03-20 02:16:48+00:00|[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+Oct  1 02:01:10 ip72-195-201-90.ph.ph.cox.net EQ__|Unknown|GMOTD|2021-03-30 04:13:18+00:00|[Mon Mar 29 21:13:18 2021] GUILD MOTD: Imortyal - - Noble - Last port up 11:30 PM EST - READ RAID for eligibility!  This Gmotd saved 1 max level necro pet!
+Oct  1 02:01:24 ip-172-31-8-150 dhclient[2766]: XMT: Solicit on eth0, interval 131880ms.
+Oct  1 02:01:36 ip-172-31-8-150 sshd[21210]: Accepted publickey for ec2-user from 72.195.201.90 port 12509 ssh2: RSA SHA256:02dALrHXIOcvQwJv2xbYEp8h9NIowl+THrtJhTgv5ZU
+Oct  1 02:01:36 ip-172-31-8-150 systemd: Started Session 380 of user ec2-user.
+Oct  1 02:01:36 ip-172-31-8-150 systemd-logind: New session 380 of user ec2-user.
+Oct  1 02:01:36 ip-172-31-8-150 sshd[21210]: pam_unix(sshd:session): session opened for user ec2-user by (uid=0)

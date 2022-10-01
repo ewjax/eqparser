@@ -107,7 +107,7 @@ class LogFile:
             if TEST_LF:
 
                 # read a sample logfile for testing
-                logfile_name = './data/test/syslog'
+                logfile_name = './data/test/remote.log'
 
                 # start parsing, but in this case, start reading from the beginning of the logfile,
                 # rather than the end (default)
