@@ -18,6 +18,7 @@ build/
 
 # Environments
 .venv
+.eslp
 
 # PyCharm64 config files
 .idea/

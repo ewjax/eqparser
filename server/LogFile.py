@@ -4,8 +4,8 @@ import asyncio
 from util import starprint
 
 # allow for testing, by forcing the bot to read an old log logfile
-# TEST_LF = False
-TEST_LF = True
+TEST_LF = False
+#TEST_LF = True
 
 
 class LogFile:
@@ -99,7 +99,7 @@ class LogFile:
 
         # already parsing?
         if self.is_parsing():
-            starprint('Already parsing rsyslog file: [{}]'.format(self.logfile_name))
+            starprint('Already parsing logfile name: [{}]'.format(self.logfile_name))
 
         else:
 
@@ -118,19 +118,19 @@ class LogFile:
                 # open the latest logfile, and kick off the parsing process
 
                 # todo - generalize this for different hosts
-                logfile_name = '/var/log/syslog'
+                logfile_name = '/var/log/remote.log'
                 rv = self.open(logfile_name)
 
             # if the log logfile was successfully opened, then initiate parsing
             if rv:
                 # status message
-                starprint('Now parsing rsyslog file: [{}]'.format(self.logfile_name))
+                starprint('Now parsing logfile name: [{}]'.format(self.logfile_name))
 
                 # create the asyncio coroutine and kick it off
                 asyncio.create_task(self.run())
 
             else:
-                starprint('ERROR: Could not open rsyslog file: [{}]'.format(self.logfile_name))
+                starprint('ERROR: Could not open logfile name: [{}]'.format(self.logfile_name))
 
         return rv
 
@@ -160,7 +160,7 @@ class LogFile:
                 # if we didn't read a line, pause just for a 100 msec blink
                 await asyncio.sleep(0.1)
 
-        starprint(f'Stopped parsing rsyslog file: [{self.logfile_name}]')
+        starprint(f'Stopped parsing logfile name: [{self.logfile_name}]')
 
     async def process_line(self, line: str, printline: bool = False) -> None:
         """
