@@ -25,7 +25,7 @@ remote_list = [
 
 #
 #
-class EQParser(EverquestLogFile.EverquestLogFile):
+class SnekParser(EverquestLogFile.EverquestLogFile):
 
     def __init__(self) -> None:
 
@@ -49,18 +49,6 @@ class EQParser(EverquestLogFile.EverquestLogFile):
         self.parse_target_list = [
             VesselDrozlin_Parser(),
             VerinaTomb_Parser(),
-            DainFrostreaverIV_Parser(),
-            Severilous_Parser(),
-            CazicThule_Parser(),
-            MasterYael_Parser(),
-            FTE_Parser(),
-            PlayerSlain_Parser(),
-            Earthquake_Parser(),
-            Random_Parser(),
-            # CommsFilter_Parser(),
-            Gratss_Parser(),
-            TOD_Parser(),
-            GMOTD_Parser(),
         ]
 
         # set up a custom logger to use for rsyslog comms
@@ -115,13 +103,13 @@ class EQParser(EverquestLogFile.EverquestLogFile):
         target = r'^\.ver '
         m = re.match(target, trunc_line)
         if m:
-            starprint(f'EQParser {_version.__VERSION__}')
+            starprint(f'SnekParser {_version.__VERSION__}')
 
         # check for .help command
         target = r'^\.help'
         m = re.match(target, trunc_line)
         if m:
-            EQParser.help_message()
+            SnekParser.help_message()
 
         # check for .ini command
         target = r'^\.ini'
@@ -162,7 +150,7 @@ class EQParser(EverquestLogFile.EverquestLogFile):
         starprint('')
         starprint('', '^', '*')
         starprint('')
-        starprint('EQParser:  Help', '^')
+        starprint('SnekParser:  Help', '^')
         starprint('')
         for (host, port) in remote_list:
             starprint(f'Sending parsing event reports to: {host}:{port}')
@@ -173,8 +161,8 @@ class EQParser(EverquestLogFile.EverquestLogFile):
         starprint('  .help          : This message')
         starprint('  .status        : Show logfile parsing status')
         starprint('  .save          : Force console window on screen position to be saved/remembered')
-        starprint('  .ver           : Display EQParser current version')
-        starprint('  .ini           : Display contents of EQParser.ini')
+        starprint('  .ver           : Display SnekParser current version')
+        starprint('  .ini           : Display contents of SnekParser.ini')
         starprint('')
         starprint('', '^', '*')
         starprint('')
@@ -185,20 +173,20 @@ class EQParser(EverquestLogFile.EverquestLogFile):
 
 async def main():
     # set console title
-    win32console.SetConsoleTitle('EQParser')
+    win32console.SetConsoleTitle('SnekParser')
 
     # print a startup message
     starprint('')
     starprint('=', alignment='^', fill='=')
-    starprint(f'EQParser {_version.__VERSION__}', alignment='^')
+    starprint(f'SnekParser {_version.__VERSION__}', alignment='^')
     starprint('=', alignment='^', fill='=')
     starprint('')
 
-    # create and start the EQParser parser
-    config.the_parser = EQParser()
+    # create and start the SnekParser parser
+    config.the_parser = SnekParser()
     config.the_parser.go()
 
-    starprint('EQParser running')
+    starprint('SnekParser running')
     config.the_parser.help_message()
 
     # while True followed by pass seems to block asyncio coroutines, so give the asyncio task a chance to break out

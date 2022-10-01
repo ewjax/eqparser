@@ -1,9 +1,9 @@
 import configparser
 from util import starprint
 
-# global instance of the EQParser class
+# global instance of the SnekParser class
 the_parser = None
-ini_filename = 'EQParser.ini'
+ini_filename = 'SnekParser.ini'
 
 
 # global data

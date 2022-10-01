@@ -8,8 +8,8 @@ from util import starprint
 
 
 # allow for testing, by forcing the bot to read an old log logfile
-# TEST_ELF = False
-TEST_ELF = True
+TEST_ELF = False
+# TEST_ELF = True
 
 
 class EverquestLogFile:

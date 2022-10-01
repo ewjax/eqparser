@@ -1,3 +1,3 @@
 
 # version number
-__VERSION__ = '0.11.1.41-dev.0'
+__VERSION__ = '1.0.0.42-snek.1'
