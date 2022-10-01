@@ -30,22 +30,23 @@ class EQSysLogParser(LogFile.LogFile):
         # does this line contain a EQ report?
         target = f'^.*{self.eqmarker}{self.field_separator}'
         target += f'(?P<charname>.+){self.field_separator}'
+        target += f'(?P<parse_target_ID>.+){self.field_separator}'
         target += f'(?P<short_desc>.+){self.field_separator}'
-        target += f'(?P<utc_timestamp>.+){self.field_separator}'
+        target += f'(?P<utc_timestamp_str>.+){self.field_separator}'
         target += f'(?P<eq_log_line>.+)'
         m = re.match(target, line)
         if m:
             # print(line, end='')
             charname = m.group('charname')
+            parse_target_ID = m.group('parse_target_ID')
             short_desc = m.group('short_desc')
             eq_log_line = m.group('eq_log_line')
 
-            # can use the datetime version of the timestamp for time-comparison de-dup purposes
-            utc_timestamp_str = m.group('utc_timestamp')
-            utc_timestamp_datetime = datetime.fromisoformat(utc_timestamp_str)
+            # convert the timestamp string into a datetime object, for use in reporting or de-duping of other reports
+            utc_timestamp_datetime = datetime.fromisoformat(m.group('utc_timestamp_str'))
 
-            # todo - do something useful with the data
-            print(f'{charname} --- {short_desc} --- {utc_timestamp_str}={utc_timestamp_datetime} --- {eq_log_line}')
+            # todo - do something useful with the received data
+            print(f'{charname} --- {parse_target_ID} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
 
 
 #################################################################################################

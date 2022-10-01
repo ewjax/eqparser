@@ -10,6 +10,7 @@ from datetime import datetime, timezone, timedelta
 # Notes for the developer:
 #   - derived classes constructor should correctly populate the following fields, according to whatever event this
 #     parser is watching for:
+#           self.parse_target_ID, a unique integer for each ParseTarget class, to help the server side
 #           self.short_description, a text description, and
 #           self._search_list, a list of regular expression(s) that indicate this event has happened
 #   - derived classes can optionally override the _custom_match_hook() method, if special/extra parsing is needed,
@@ -40,6 +41,7 @@ class ParseTarget:
         """
 
         # modify these as necessary in child classes
+        self.parse_target_ID = 0
         self.short_description = 'Generic Target Name spawn!'
         self._search_list = [
             '^Generic Target Name begins to cast a spell',
@@ -154,6 +156,7 @@ class ParseTarget:
         """
         rv = f'{self.eqmarker}{self.field_separator}'
         rv += f'{self.parsing_player}{self.field_separator}'
+        rv += f'{self.parse_target_ID}{self.field_separator}'
         rv += f'{self.short_description}{self.field_separator}'
         rv += f'{self._utc_datetime}{self.field_separator}'
         # rv += f'{self._local_datetime}{self.field_separator}'
@@ -173,6 +176,7 @@ class VesselDrozlin_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 1
         self.short_description = 'Vessel Drozlin spawn!'
         self._search_list = [
             '^Vessel Drozlin begins to cast a spell',
@@ -190,6 +194,7 @@ class VerinaTomb_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 2
         self.short_description = 'Verina Tomb spawn!'
         self._search_list = [
             '^Verina Tomb begins to cast a spell',
@@ -207,6 +212,7 @@ class MasterYael_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 3
         self.short_description = 'Master Yael spawn!'
         self._search_list = [
             '^Master Yael begins to cast a spell',
@@ -224,6 +230,7 @@ class DainFrostreaverIV_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 4
         self.short_description = 'Dain Frostreaver IV spawn!'
         self._search_list = [
             '^Dain Frostreaver IV engages (?P<playername>[\\w ]+)!',
@@ -240,6 +247,7 @@ class Severilous_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 5
         self.short_description = 'Severilous spawn!'
         self._search_list = [
             '^Severilous begins to cast a spell',
@@ -257,6 +265,7 @@ class CazicThule_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 6
         self.short_description = 'Cazic Thule spawn!'
         self._search_list = [
             '^Cazic Thule engages (?P<playername>[\\w ]+)!',
@@ -275,6 +284,7 @@ class FTE_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 7
         self.short_description = 'FTE!'
         self._search_list = [
             '^(?P<target_name>[\\w ]+) engages (?P<playername>[\\w ]+)!'
@@ -296,6 +306,7 @@ class PlayerSlain_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 8
         self.short_description = 'Player Slain!'
         self._search_list = [
             '^You have been slain by (?P<target_name>[\\w ]+)'
@@ -309,6 +320,7 @@ class Earthquake_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 9
         self.short_description = 'Earthquake!'
         self._search_list = [
             '^The Gods of Norrath emit a sinister laugh as they toy with their creations'
@@ -324,6 +336,7 @@ class Random_Parser(ParseTarget):
     def __init__(self):
         super().__init__()
         self.playername = None
+        self.parse_target_ID = 10
         self.short_description = 'Random!'
         self._search_list = [
             '\\*\\*A Magic Die is rolled by (?P<playername>[\\w ]+)\\.',
@@ -441,6 +454,7 @@ class CommsFilter_Parser(ParseTarget):
         # if we weren't interested in being able to filter only some channels, then this could
         # all be boiled down to just
         #       (?!^[\\w]+ (told|tell(s)?|say(s)?|auction(s)?|shout(s)?|-> [\\w]+:))
+        self.parse_target_ID = 11
         self.short_description = 'Comms Filter'
         self._search_list = [
             f'{tell_regex}{say_regex}{group_regex}{auc_regex}{ooc_regex}{shout_regex}{guild_regex}',
@@ -454,6 +468,7 @@ class Gratss_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 12
         self.short_description = 'Gratss'
         self._search_list = [
             ".*gratss(?i)",
@@ -470,6 +485,7 @@ class TOD_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 13
         self.short_description = 'TOD'
         self._search_list = [
             ".*tod(?i)",
@@ -586,6 +602,7 @@ class GMOTD_Parser(ParseTarget):
 
     def __init__(self):
         super().__init__()
+        self.parse_target_ID = 14
         self.short_description = 'GMOTD'
         self._search_list = [
             '^GUILD MOTD:',
