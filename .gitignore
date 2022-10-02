@@ -18,7 +18,9 @@ build/
 
 # Environments
 .venv
+.EQParser.venv
 .eslp
+
 
 # PyCharm64 config files
 .idea/

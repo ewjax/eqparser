@@ -4,10 +4,10 @@ PACKAGE=EQParser
 ##############################################################################
 # do this while not in venv
 venv:
-	python -m venv .venv
+	python -m venv .$(PACKAGE).venv
 
 venv.clean:
-	rm -rfd .venv
+	rm -rfd .$(PACKAGE).venv
 
 
 
