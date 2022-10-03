@@ -118,7 +118,13 @@ class LogFile:
                 # open the latest logfile, and kick off the parsing process
 
                 # todo - generalize this for different hosts
-                logfile_name = '/var/log/remote.log'
+
+                # AWS VM
+                # logfile_name = '/var/log/remote.log'
+
+                # raspberry pi
+                logfile_name = '/var/log/rsyslog'
+
                 rv = self.open(logfile_name)
 
             # if the log logfile was successfully opened, then initiate parsing
