@@ -35,7 +35,7 @@ class EverquestLogFile:
         self.base_directory = base_directory
         self.logs_directory = logs_directory
         self._char_name = 'Unknown'
-        self.server_name = 'Unknown'
+        self._server_name = 'Unknown'
         self.logfile_name = 'Unknown'
         self.logfile = None
 
@@ -53,6 +53,15 @@ class EverquestLogFile:
             name: player whose log file is being parsed
         """
         self._char_name = name
+
+    def set_server_name(self, name: str) -> None:
+        """
+        allow derived classes to override this as necessary, to do whatever is needed when server changes
+
+        Args:
+            name: server name
+        """
+        self._server_name = name
 
     def set_parsing(self) -> None:
         """
@@ -116,15 +125,16 @@ class EverquestLogFile:
             # stop parsing old and open the new logfile
             self.close()
 
-            # self._char_name = m.group('charname')
             self.set_char_name(m.group('charname'))
+            self.set_server_name(m.group('servername'))
             rv = self.open(latest_file, seek_end)
 
         # if we aren't parsing any logfile, then open latest
         elif not self.is_parsing():
 
-            # self._char_name = m.group('charname')
             self.set_char_name(m.group('charname'))
+            self.set_server_name(m.group('servername'))
+
             rv = self.open(latest_file, seek_end)
 
         return rv
@@ -271,9 +281,6 @@ class EverquestLogFile:
 
         if printline:
             print(line.rstrip())
-
-        # cut off the leading date-time stamp info
-        # trunc_line = line[27:]
 
 
 #

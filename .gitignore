@@ -1,6 +1,4 @@
 # specific files
-pre-commit.bat
-EQParser.ini
 
 
 # directories for this project
@@ -18,8 +16,7 @@ build/
 
 # Environments
 .venv
-.EQParser.venv
-.eslp
+.EQSysLogParser.venv
 
 
 # PyCharm64 config files
