@@ -1,4 +1,5 @@
 # specific files
+EQSysLogParser.ini
 
 
 # directories for this project
@@ -13,6 +14,7 @@ dist/
 *.manifest
 *.spec
 build/
+
 
 # Environments
 .venv

@@ -3,7 +3,7 @@ from util import starprint
 
 # global instance of the EQParser class
 the_parser = None
-ini_filename = 'EQParser.ini'
+ini_filename = 'EQSysLogParser.ini'
 
 
 # global data
@@ -39,43 +39,13 @@ def verify_settings() -> None:
     modified = False
 
     # Everquest section
-    section = 'Everquest'
+    section = 'RSysLog'
     if not config_data.has_section(section):
         config_data.add_section(section)
         modified = True
 
-    if not config_data.has_option(section, 'base_directory'):
-        config_data.set(section, 'base_directory', 'c:\\everquest')
-        modified = True
-
-    if not config_data.has_option(section, 'logs_directory'):
-        config_data.set(section, 'logs_directory', '\\logs\\')
-        modified = True
-
-    if not config_data.has_option(section, 'heartbeat'):
-        config_data.set(section, 'heartbeat', '15')
-        modified = True
-
-    # screen positions section
-    section = 'ConsoleWindowPosition'
-    if not config_data.has_section(section):
-        config_data.add_section(section)
-        modified = True
-
-    if not config_data.has_option(section, 'x'):
-        config_data.set(section, 'x', '100')
-        modified = True
-
-    if not config_data.has_option(section, 'y'):
-        config_data.set(section, 'y', '100')
-        modified = True
-
-    if not config_data.has_option(section, 'width'):
-        config_data.set(section, 'width', '1200')
-        modified = True
-
-    if not config_data.has_option(section, 'height'):
-        config_data.set(section, 'height', '800')
+    if not config_data.has_option(section, 'file_name'):
+        config_data.set(section, 'file_name', '/var/log/syslog')
         modified = True
 
     # save the data

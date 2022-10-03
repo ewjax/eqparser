@@ -3,6 +3,7 @@ import re
 from datetime import datetime
 
 import _version
+import config
 import LogFile
 from util import starprint
 
@@ -17,6 +18,9 @@ class EQSysLogParser(LogFile.LogFile):
     def __init__(self) -> None:
         super().__init__()
 
+        # force global data to load from ini logfile
+        config.load()
+
         # parsing landmarks
         self.field_separator = '\\|'
         self.eqmarker = 'EQ__'
@@ -30,7 +34,7 @@ class EQSysLogParser(LogFile.LogFile):
         # does this line contain a EQ report?
         target = f'^.*{self.eqmarker}{self.field_separator}'
         target += f'(?P<charname>.+){self.field_separator}'
-        target += f'(?P<parse_target_ID>.+){self.field_separator}'
+        target += f'(?P<log_event_ID>.+){self.field_separator}'
         target += f'(?P<short_desc>.+){self.field_separator}'
         target += f'(?P<utc_timestamp_str>.+){self.field_separator}'
         target += f'(?P<eq_log_line>.+)'
@@ -38,7 +42,7 @@ class EQSysLogParser(LogFile.LogFile):
         if m:
             # print(line, end='')
             charname = m.group('charname')
-            parse_target_ID = m.group('parse_target_ID')
+            log_event_ID = m.group('log_event_ID')
             short_desc = m.group('short_desc')
             eq_log_line = m.group('eq_log_line')
 
@@ -46,7 +50,7 @@ class EQSysLogParser(LogFile.LogFile):
             utc_timestamp_datetime = datetime.fromisoformat(m.group('utc_timestamp_str'))
 
             # todo - do something useful with the received data
-            print(f'{charname} --- {parse_target_ID} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
+            print(f'{charname} --- {log_event_ID} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
 
 
 #################################################################################################

@@ -1,6 +1,7 @@
 import os
 import asyncio
 
+import config
 from util import starprint
 
 # allow for testing, by forcing the bot to read an old log logfile
@@ -116,9 +117,7 @@ class LogFile:
             # open the latest logfile
             else:
                 # open the latest logfile, and kick off the parsing process
-
-                # todo - generalize this for different hosts
-                logfile_name = '/var/log/remote.log'
+                logfile_name = config.config_data.get('RSysLog', 'file_name')
                 rv = self.open(logfile_name)
 
             # if the log logfile was successfully opened, then initiate parsing

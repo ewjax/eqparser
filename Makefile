@@ -4,7 +4,7 @@ PACKAGE=EQSysLogParser
 ##############################################################################
 # do this while not in venv
 venv:
-	python -m venv .$(PACKAGE).venv
+	python3.9 -m venv .$(PACKAGE).venv
 
 venv.clean:
 	rm -rfd .$(PACKAGE).venv
@@ -13,7 +13,7 @@ venv.clean:
 ##############################################################################
 # do these while in venv
 run: libs.quiet
-	python $(PACKAGE).py
+	python3.9 $(PACKAGE).py
 
 
 # libs make targets ###########################
