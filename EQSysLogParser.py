@@ -49,7 +49,8 @@ class EQSysLogParser(LogFile.LogFile):
             # convert the timestamp string into a datetime object, for use in reporting or de-duping of other reports
             utc_timestamp_datetime = datetime.fromisoformat(m.group('utc_timestamp_str'))
 
-            # todo - do something useful with the received data
+            # todo - do something useful with the received data, e.g. put all spawn messages in this channel, 
+            # put all TOD messages in that channel, use the UTC timestamp to de-dupe, etc
             print(f'{charname} --- {log_event_ID} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
 
 
