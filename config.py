@@ -38,8 +38,8 @@ def verify_settings() -> None:
     global config_data
     modified = False
 
-    # Everquest section
-    section = 'RSysLog'
+    # RSysLog section
+    section = 'rsyslog'
     if not config_data.has_section(section):
         config_data.add_section(section)
         modified = True
@@ -48,10 +48,23 @@ def verify_settings() -> None:
         config_data.set(section, 'file_name', '/var/log/syslog')
         modified = True
 
+    # discord section
+    section = 'Discord'
+    if not config_data.has_section(section):
+        config_data.add_section(section)
+        modified = True
+
+    if not config_data.has_option(section, 'bot_token'):
+        config_data.set(section, 'bot_token', 'your_bot_token_here')
+        modified = True
+
+    if not config_data.has_option(section, 'bot_command_prefix'):
+        config_data.set(section, 'bot_command_prefix', '!')
+        modified = True
+
     # save the data
     if modified:
         save()
-        show()
 
 
 def save() -> None:

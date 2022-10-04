@@ -117,7 +117,7 @@ class LogFile:
             # open the latest logfile
             else:
                 # open the latest logfile, and kick off the parsing process
-                logfile_name = config.config_data.get('RSysLog', 'file_name')
+                logfile_name = config.config_data.get('rsyslog', 'file_name')
                 rv = self.open(logfile_name)
 
             # if the log logfile was successfully opened, then initiate parsing
