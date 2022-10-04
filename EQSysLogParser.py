@@ -10,6 +10,8 @@ from util import starprint
 
 #################################################################################################
 
+# all different
+
 
 #
 #
@@ -34,7 +36,7 @@ class EQSysLogParser(LogFile.LogFile):
         # does this line contain a EQ report?
         target = f'^.*{self.eqmarker}{self.field_separator}'
         target += f'(?P<charname>.+){self.field_separator}'
-        target += f'(?P<log_event_ID>.+){self.field_separator}'
+        target += f'(?P<log_event_id>.+){self.field_separator}'
         target += f'(?P<short_desc>.+){self.field_separator}'
         target += f'(?P<utc_timestamp_str>.+){self.field_separator}'
         target += f'(?P<eq_log_line>.+)'
@@ -42,7 +44,7 @@ class EQSysLogParser(LogFile.LogFile):
         if m:
             # print(line, end='')
             charname = m.group('charname')
-            log_event_ID = m.group('log_event_ID')
+            log_event_id = m.group('log_event_id')
             short_desc = m.group('short_desc')
             eq_log_line = m.group('eq_log_line')
 
@@ -51,7 +53,7 @@ class EQSysLogParser(LogFile.LogFile):
 
             # todo - do something useful with the received data, e.g. put all spawn messages in this channel, 
             # put all TOD messages in that channel, use the UTC timestamp to de-dupe, etc
-            print(f'{charname} --- {log_event_ID} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
+            print(f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
 
 
 #################################################################################################
