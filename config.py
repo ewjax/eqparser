@@ -3,7 +3,7 @@ from util import starprint
 
 # global instance of the EQParser class
 the_parser = None
-ini_filename = 'EQSysLogParser.ini'
+ini_filename = 'EQParser.ini'
 
 
 # global data

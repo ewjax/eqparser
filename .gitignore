@@ -1,5 +1,5 @@
 # specific files
-EQSysLogParser.ini
+EQParser.ini
 
 
 # directories for this project
@@ -18,7 +18,7 @@ build/
 
 # Environments
 .venv
-.EQSysLogParser.venv
+.EQParser.venv
 
 
 # PyCharm64 config files

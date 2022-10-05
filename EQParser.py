@@ -13,6 +13,7 @@ from util import starprint
 
 
 
+
 #################################################################################################
 
 #
@@ -24,8 +25,6 @@ class EQSysLogParser(LogFile.LogFile):
 
         # force global data to load from ini logfile
         config.load()
-
-        self.ctx = None
 
     #
     # process each line
@@ -62,13 +61,13 @@ class EQSysLogParser(LogFile.LogFile):
             if self.ctx:
                 await self.ctx.send(f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime}')
 
-
-    def go(self, ctx):
-        super().go()
-        self.ctx = ctx
+            await client.alarm(msg=f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
 
 
 the_parser = EQSysLogParser()
+the_parser.go()
+
+starprint('EQSysLogParser running')
 
 
 #################################################################################################
@@ -90,7 +89,7 @@ class myClient(commands.Bot):
         super().__init__(command_prefix=my_prefix)
 
     # sound the alarm
-    async def alarm(self, ctx, msg):
+    async def alarm(self, msg):
 
         # try to find the #pop channels
         # if ctx.guild.name == myconfig.PERSONAL_SERVER_NAME:
@@ -105,7 +104,8 @@ class myClient(commands.Bot):
         # else:
         #     await ctx.send(msg)
 
-        pass
+        channel = client.get_channel(879070487790120982)
+        await channel.send(msg)
 
 
 # create the global instance of the client that manages communication to the discord bot

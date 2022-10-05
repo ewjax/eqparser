@@ -1,5 +1,5 @@
 
-PACKAGE=EQSysLogParser
+PACKAGE=EQParser
 PYTHON=python3
 
 

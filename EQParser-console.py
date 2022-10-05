@@ -23,22 +23,22 @@ class EQSysLogParser(LogFile.LogFile):
         # force global data to load from ini logfile
         config.load()
 
-        # parsing landmarks
-        self.field_separator = '\\|'
-        self.eqmarker = 'EQ__'
-
     #
     # process each line
     async def process_line(self, line: str, printline: bool = False) -> None:
         # call parent to edit every line, the default behavior
         await super().process_line(line, printline)
 
+        # parsing landmarks
+        field_separator = '\\|'
+        eqmarker = 'EQ__'
+
         # does this line contain a EQ report?
-        target = f'^.*{self.eqmarker}{self.field_separator}'
-        target += f'(?P<charname>.+){self.field_separator}'
-        target += f'(?P<log_event_id>.+){self.field_separator}'
-        target += f'(?P<short_desc>.+){self.field_separator}'
-        target += f'(?P<utc_timestamp_str>.+){self.field_separator}'
+        target = f'^.*{eqmarker}{field_separator}'
+        target += f'(?P<charname>.+){field_separator}'
+        target += f'(?P<log_event_id>.+){field_separator}'
+        target += f'(?P<short_desc>.+){field_separator}'
+        target += f'(?P<utc_timestamp_str>.+){field_separator}'
         target += f'(?P<eq_log_line>.+)'
         m = re.match(target, line)
         if m:
