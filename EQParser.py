@@ -12,13 +12,11 @@ import LogFile
 from util import starprint
 
 
-
-
 #################################################################################################
 
 #
 #
-class EQSysLogParser(LogFile.LogFile):
+class EQParser(LogFile.LogFile):
 
     def __init__(self) -> None:
         super().__init__()
@@ -58,16 +56,11 @@ class EQSysLogParser(LogFile.LogFile):
             # put all TOD messages in that channel, use the UTC timestamp to de-dupe, etc
             print(f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
 
-            if self.ctx:
-                await self.ctx.send(f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime}')
-
             await client.alarm(msg=f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
 
 
-the_parser = EQSysLogParser()
-the_parser.go()
-
-starprint('EQSysLogParser running')
+# create the global instance of the parser class
+the_parser = EQParser()
 
 
 #################################################################################################
@@ -81,7 +74,7 @@ starprint('EQSysLogParser running')
 
 
 # define the client instance to interact with the discord bot
-class myClient(commands.Bot):
+class DiscordClient(commands.Bot):
 
     #
     # ctor
@@ -110,7 +103,7 @@ class myClient(commands.Bot):
 
 # create the global instance of the client that manages communication to the discord bot
 prefix = config.config_data.get('Discord', 'bot_command_prefix')
-client = myClient(prefix)
+client = DiscordClient(prefix)
 
 
 #################################################################################################
@@ -122,11 +115,11 @@ client = myClient(prefix)
 # on_ready
 @client.event
 async def on_ready():
-    print('Spawn Tracker 2000 is alive!')
-    print('Discord.py version: {}'.format(discord.__version__))
-
-    print('Logged on as {}!'.format(client.user))
-    print('App ID: {}'.format(client.user.id))
+    starprint('Spawn Tracker 2000 is alive!')
+    starprint(f'Discord.py version: {discord.__version__}')
+    starprint(f'Logged on as {client.user}')
+    starprint(f'App ID: {client.user.id}')
+    the_parser.go()
 
 
 # on_message - catches everything, messages and commands
@@ -136,28 +129,21 @@ async def on_message(message):
     author = message.author
     content = message.content
     channel = message.channel
-    print('Content received: [{}] from [{}] in channel [{}]'.format(content, author, channel))
+    starprint(f'Content received: [{content}] from [{author}] in channel [{channel}]')
     await client.process_commands(message)
 
 
 # ping command
 @client.command()
 async def ping(ctx):
-    print('Command received: [{}] from [{}]'.format(ctx.message.content, ctx.message.author))
-    await ctx.send('Latency = {} ms'.format(round(client.latency * 1000)))
-
-
-# start command
-@client.command()
-async def go(ctx):
-    print('Command received: [{}] from [{}]'.format(ctx.message.content, ctx.message.author))
-    the_parser.go(ctx)
+    starprint(f'Command received: [{ctx.message.content}] from [{ctx.message.author}]')
+    await ctx.send(f'Latency = {round(client.latency * 1000)} ms')
 
 
 # status command
 @client.command()
 async def status(ctx):
-    print('Command received: [{}] from [{}]'.format(ctx.message.content, ctx.message.author))
+    starprint(f'Command received: [{ctx.message.content}] from [{ctx.message.author}]')
 
     # if elf.is_parsing():
     #     await ctx.send('Parsing character log for: [{}]'.format(elf.char_name))
@@ -176,15 +162,14 @@ def main():
     # print a startup message
     starprint('')
     starprint('=', alignment='^', fill='=')
-    starprint(f'EQSysLogParser {_version.__VERSION__}', alignment='^')
+    starprint(f'EQParser {_version.__VERSION__}', alignment='^')
     starprint('=', alignment='^', fill='=')
     starprint('')
-
-    # create and start the EQParser parser
 
     # let's go!!  this command is blocking
     token = config.config_data.get('Discord', 'bot_token')
     client.run(token)
+
 
 if __name__ == '__main__':
     main()
