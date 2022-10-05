@@ -15,7 +15,7 @@ from util import starprint
 
 #
 #
-class EQSysLogParser(LogFile.LogFile):
+class EQParser(LogFile.LogFile):
 
     def __init__(self) -> None:
         super().__init__()
@@ -63,15 +63,15 @@ async def main():
     # print a startup message
     starprint('')
     starprint('=', alignment='^', fill='=')
-    starprint(f'EQSysLogParser {_version.__VERSION__}', alignment='^')
+    starprint(f'EQParser {_version.__VERSION__}', alignment='^')
     starprint('=', alignment='^', fill='=')
     starprint('')
 
     # create and start the EQParser parser
-    the_parser = EQSysLogParser()
+    the_parser = EQParser()
     the_parser.go()
 
-    starprint('EQSysLogParser running')
+    starprint('EQParser running')
 
     # while True followed by pass seems to block asyncio coroutines, so give the asyncio task a chance to break out
     while True:
