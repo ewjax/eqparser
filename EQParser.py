@@ -2,7 +2,7 @@
 
 import asyncio
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 import discord
 from discord.ext import commands
 
@@ -10,6 +10,24 @@ import _version
 import config
 import LogFile
 from util import starprint
+
+
+# define some ID constants for the derived classes
+LOGEVENT_BASE: int = 0
+LOGEVENT_VD: int = 1
+LOGEVENT_VT: int = 2
+LOGEVENT_YAEL: int = 3
+LOGEVENT_DAIN: int = 4
+LOGEVENT_SEV: int = 5
+LOGEVENT_CT: int = 6
+LOGEVENT_FTE: int = 7
+LOGEVENT_PLAYERSLAIN: int = 8
+LOGEVENT_QUAKE: int = 9
+LOGEVENT_RANDOM: int = 10
+LOGEVENT_ABC: int = 11
+LOGEVENT_GRATSS: int = 12
+LOGEVENT_TOD: int = 13
+LOGEVENT_GMOTD: int = 14
 
 
 #################################################################################################
@@ -45,7 +63,7 @@ class EQParser(LogFile.LogFile):
         if m:
             # print(line, end='')
             charname = m.group('charname')
-            log_event_id = m.group('log_event_id')
+            log_event_id = int(m.group('log_event_id'))
             short_desc = m.group('short_desc')
             eq_log_line = m.group('eq_log_line')
 
@@ -56,7 +74,38 @@ class EQParser(LogFile.LogFile):
             # put all TOD messages in that channel, use the UTC timestamp to de-dupe, etc
             print(f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
 
-            await client.alarm(msg=f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
+            # various channel id's from personal discord server
+            personal_general = config.config_data.getint('Personal Discord Server', 'general')
+            personal_pop = config.config_data.getint('Personal Discord Server', 'pop')
+            personal_spawn = config.config_data.getint('Personal Discord Server', 'spawn')
+            personal_alert = config.config_data.getint('Personal Discord Server', 'alert')
+            personal_tod = config.config_data.getint('Personal Discord Server', 'tod')
+            personal_gmotd = config.config_data.getint('Personal Discord Server', 'gmotd')
+
+            # pop channel for snek discord server
+            snek_pop = config.config_data.getint('Snek Discord Server', 'pop')
+
+            # dispatch the parsed log events to the appropriate channels
+            if log_event_id == LOGEVENT_VD or log_event_id == LOGEVENT_VT:
+                await client.channel_report(personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                short_desc = '@everyone' + short_desc
+                await client.channel_report(personal_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                # await client.channel_report(snek_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+
+            elif log_event_id == LOGEVENT_YAEL or log_event_id == LOGEVENT_DAIN or log_event_id == LOGEVENT_SEV or log_event_id == LOGEVENT_CT:
+                await client.channel_report(personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+
+            elif log_event_id == LOGEVENT_FTE or log_event_id == LOGEVENT_QUAKE or log_event_id == LOGEVENT_RANDOM or log_event_id == LOGEVENT_GRATSS:
+                await client.channel_report(personal_alert, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+
+            elif log_event_id == LOGEVENT_TOD:
+                await client.channel_report(personal_tod, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+
+            elif log_event_id == LOGEVENT_GMOTD:
+                await client.channel_report(personal_gmotd, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+
+            else:
+                await client.channel_report(personal_general, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
 
 # create the global instance of the parser class
@@ -81,28 +130,31 @@ class DiscordClient(commands.Bot):
     def __init__(self, my_prefix):
         super().__init__(command_prefix=my_prefix)
 
-    # sound the alarm
-    async def alarm(self, msg):
+    # send output to indicated channel number
 
-        # try to find the #pop channels
-        # if ctx.guild.name == myconfig.PERSONAL_SERVER_NAME:
-        #     pop_channel = client.get_channel(myconfig.PERSONAL_SERVER_POPID)
-        #     await pop_channel.send(msg)
-        #
-        # elif ctx.guild.name == myconfig.SNEK_SERVER_NAME:
-        #     pop_channel = client.get_channel(myconfig.SNEK_SERVER_POPID)
-        #     await pop_channel.send(msg)
-        #
-        # # if we didn't find the #pop channel for whatever reason, just bang it to current channel
-        # else:
-        #     await ctx.send(msg)
+    async def channel_report(self, channel_id: int, charname: str, log_event_id: int, short_desc: str, utc_timestamp_datetime: datetime, eq_log_line: str) -> None:
+        channel = client.get_channel(channel_id)
+        if channel:
+            # todo - do any needed de-duping
 
-        channel = client.get_channel(879070487790120982)
-        await channel.send(msg)
+            # send the report
+            await channel.send(f'{short_desc} (from: {charname})')
+
+            # convert the UTC to EDT (4 hours behind UTC), then represent it in the same format of an EQ timestamp
+            edt_modifier = timedelta(hours=-4)
+            edt_datetime = utc_timestamp_datetime + edt_modifier
+            edt_eqformat_str = edt_datetime.strftime('[%a %b %d %H:%M:%S %Y]')
+
+            line = '```'
+            line += f'Raw: {eq_log_line}'
+            line += '\n'
+            line += f'EDT: {edt_eqformat_str}'
+            line += '```'
+            await channel.send(line)
 
 
 # create the global instance of the client that manages communication to the discord bot
-prefix = config.config_data.get('Discord', 'bot_command_prefix')
+prefix = config.config_data.get('Discord Bot', 'bot_command_prefix')
 client = DiscordClient(prefix)
 
 
@@ -145,14 +197,12 @@ async def ping(ctx):
 async def status(ctx):
     starprint(f'Command received: [{ctx.message.content}] from [{ctx.message.author}]')
 
-    # if elf.is_parsing():
-    #     await ctx.send('Parsing character log for: [{}]'.format(elf.char_name))
-    #     await ctx.send('Log filename: [{}]'.format(elf.filename))
-    #     await ctx.send('Parsing initiated by: [{}]'.format(elf.author))
-    #     await ctx.send('Heartbeat timeout (minutes): [{}]'.format(elf.heartbeat))
-    #
-    # else:
-    #     await ctx.send('Not currently parsing')
+    await ctx.send(f'EQParser {_version.__VERSION__}')
+
+    if the_parser.is_parsing():
+        await ctx.send(f'Now parsing logfile name: [{the_parser.logfile_name}]')
+    else:
+        await ctx.send('Not currently parsing')
 
 
 #################################################################################################
@@ -167,7 +217,7 @@ def main():
     starprint('')
 
     # let's go!!  this command is blocking
-    token = config.config_data.get('Discord', 'bot_token')
+    token = config.config_data.get('Discord Bot', 'bot_token')
     client.run(token)
 
 

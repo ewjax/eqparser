@@ -66,8 +66,8 @@ class LogFile:
             self.set_parsing()
             return True
         except OSError as err:
-            starprint('OS error: {0}'.format(err))
-            starprint('Unable to open logfile name: [{}]'.format(filename))
+            starprint(f'OS error: {err}')
+            starprint(f'Unable to open logfile name: [{filename}]')
             return False
 
     def close(self) -> None:
@@ -123,7 +123,7 @@ class LogFile:
             # if the log logfile was successfully opened, then initiate parsing
             if rv:
                 # status message
-                starprint('Now parsing logfile name: [{}]'.format(self.logfile_name))
+                starprint(f'Now parsing logfile name: [{self.logfile_name}]')
 
                 # create the asyncio coroutine and kick it off
                 asyncio.create_task(self.run())

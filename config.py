@@ -49,7 +49,7 @@ def verify_settings() -> None:
         modified = True
 
     # discord section
-    section = 'Discord'
+    section = 'Discord Bot'
     if not config_data.has_section(section):
         config_data.add_section(section)
         modified = True
@@ -60,6 +60,42 @@ def verify_settings() -> None:
 
     if not config_data.has_option(section, 'bot_command_prefix'):
         config_data.set(section, 'bot_command_prefix', '!')
+        modified = True
+
+    # personal section
+    section = 'Personal Discord Server'
+    if not config_data.has_section(section):
+        config_data.add_section(section)
+        modified = True
+
+    if not config_data.has_option(section, 'pop'):
+        config_data.set(section, 'pop', 'pop channel id here')
+        modified = True
+
+    if not config_data.has_option(section, 'spawn'):
+        config_data.set(section, 'spawn', 'spawn channel id here')
+        modified = True
+
+    if not config_data.has_option(section, 'alert'):
+        config_data.set(section, 'alert', 'alert channel id here')
+        modified = True
+
+    if not config_data.has_option(section, 'tod'):
+        config_data.set(section, 'tod', 'tod channel id here')
+        modified = True
+
+    if not config_data.has_option(section, 'gmotd'):
+        config_data.set(section, 'gmotd', 'gmotd channel id here')
+        modified = True
+
+    # snek server section
+    section = 'Snek Discord Server'
+    if not config_data.has_section(section):
+        config_data.add_section(section)
+        modified = True
+
+    if not config_data.has_option(section, 'pop'):
+        config_data.set(section, 'pop', 'pop channel id here')
         modified = True
 
     # save the data
