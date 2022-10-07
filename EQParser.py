@@ -70,9 +70,8 @@ class EQParser(LogFile.LogFile):
             # convert the timestamp string into a datetime object, for use in reporting or de-duping of other reports
             utc_timestamp_datetime = datetime.fromisoformat(m.group('utc_timestamp_str'))
 
-            # todo - do something useful with the received data, e.g. put all spawn messages in this channel, 
-            # put all TOD messages in that channel, use the UTC timestamp to de-dupe, etc
-            print(f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
+            # do something useful with the collected data
+            # print(f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
 
             # various channel id's from personal discord server
             personal_general = config.config_data.getint('Personal Discord Server', 'general')
@@ -88,9 +87,8 @@ class EQParser(LogFile.LogFile):
             # dispatch the parsed log events to the appropriate channels
             if log_event_id == LOGEVENT_VD or log_event_id == LOGEVENT_VT:
                 await client.channel_report(personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
-                short_desc = '@everyone' + short_desc
-                await client.channel_report(personal_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
-                # await client.channel_report(snek_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                await client.channel_report(personal_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line, everyone=True)
+                # await client.channel_report(snek_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line, everyone=True)
 
             elif log_event_id == LOGEVENT_YAEL or log_event_id == LOGEVENT_DAIN or log_event_id == LOGEVENT_SEV or log_event_id == LOGEVENT_CT:
                 await client.channel_report(personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
@@ -130,14 +128,39 @@ class DiscordClient(commands.Bot):
     def __init__(self, my_prefix):
         super().__init__(command_prefix=my_prefix)
 
+    #
     # send output to indicated channel number
+    async def channel_report(self, channel_id: int,
+                             charname: str,
+                             log_event_id: int,
+                             short_desc: str,
+                             utc_timestamp_datetime: datetime,
+                             eq_log_line: str,
+                             everyone: bool = False) -> None:
+        """
+        Issue a report to the indicated channel
 
-    async def channel_report(self, channel_id: int, charname: str, log_event_id: int, short_desc: str, utc_timestamp_datetime: datetime, eq_log_line: str) -> None:
+        TODO:  Add de-duplicating functionality.  It seems reasonable that de-duplication might
+        depend on the event type (log_event_ID), and make use of the UTC timestamp to establish
+        a 'blackout window' that would preclude other events judged to be duplicates from being posted
+
+        Args:
+            channel_id: discord channel ID
+            charname: character name of the toon who sent the report
+            log_event_id: log event type number
+            short_desc: short description
+            utc_timestamp_datetime: UTC timestamp
+            eq_log_line: raw line of text
+            everyone: boolean flag, if True, prepend the message with '@everyone'
+        """
         channel = client.get_channel(channel_id)
         if channel:
             # todo - do any needed de-duping
 
-            # send the report
+            if everyone:
+                short_desc = '@everyone' + short_desc
+
+            # send the first line of the report
             await channel.send(f'{short_desc} (from: {charname})')
 
             # convert the UTC to EDT (4 hours behind UTC), then represent it in the same format of an EQ timestamp
@@ -145,6 +168,7 @@ class DiscordClient(commands.Bot):
             edt_datetime = utc_timestamp_datetime + edt_modifier
             edt_eqformat_str = edt_datetime.strftime('[%a %b %d %H:%M:%S %Y]')
 
+            # send the second and third line of the report
             line = '```'
             line += f'Raw: {eq_log_line}'
             line += '\n'
