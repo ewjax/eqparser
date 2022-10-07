@@ -26,6 +26,28 @@ remote_list = [
     ('ec2-3-133-158-247.us-east-2.compute.amazonaws.com', 22514),
 ]
 ```
+---
+#### *Report Format*
+The concept is that each match generates a single line report that contains the relevant information for this event, with fields separated by LogEvent.field_separator character (default = '|').
+
+Fields included in the rsyslog report:
+1. A standard marker, default 'EQ__', to assist in downstream parsing
+2. Player name
+3. An integer ID, unique to that particular type of LogEvent,  to assist in downstream sorting and processing
+4. Short description
+5. UTC timestamp
+6. The raw line from the everquest log file
+
+Examples:
+```
+EQ__|Azleep|1|Vessel Drozlin spawn!|2021-05-31 23:05:42+00:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+EQ__|Azleep|7|FTE: Vessel Drozlin engages Azleep|2021-05-31 23:05:42+00:00|[Mon May 31 16:05:42 2021] Vessel Drozlin engages Azleep!
+EQ__|Azleep|13|TOD (Slain Message): Vessel Drozlin|2021-05-31 23:09:18+00:00|[Mon May 31 16:09:18 2021] Vessel Drozlin has been slain by Crusader Golia!
+EQ__|Azleep|12|Gratss|2022-09-18 23:41:50+00:00|[Sun Sep 18 16:41:50 2022] Snoiche tells the guild, 'Crexxus Crown of Narandi  500 Gratss me'
+EQ__|Azleep|13|TOD|2021-07-03 08:19:27+00:00|[Sat Jul 03 01:19:27 2021] Jherin tells the guild, 'ToD Harla Dar'
+EQ__|Azleep|14|GMOTD|2021-03-20 02:16:48+00:00|[Fri Mar 19 19:16:48 2021] GUILD MOTD: Zalkestna - - What do you call an elf who won't share? -----Elfish----That's your Friday GMOTD!  Have fun and be kind to one another!
+```
+---
 
 The server should be able to listen / tail the appropriate rsyslog file, and decode it using something like:
 ```
