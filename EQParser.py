@@ -26,8 +26,9 @@ LOGEVENT_QUAKE: int = 9
 LOGEVENT_RANDOM: int = 10
 LOGEVENT_ABC: int = 11
 LOGEVENT_GRATSS: int = 12
-LOGEVENT_TOD: int = 13
+LOGEVENT_TODLO: int = 13
 LOGEVENT_GMOTD: int = 14
+LOGEVENT_TODHI: int = 15
 
 
 #################################################################################################
@@ -96,7 +97,7 @@ class EQParser(LogFile.LogFile):
             elif log_event_id == LOGEVENT_FTE or log_event_id == LOGEVENT_QUAKE or log_event_id == LOGEVENT_RANDOM or log_event_id == LOGEVENT_GRATSS:
                 await client.channel_report(personal_alert, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
-            elif log_event_id == LOGEVENT_TOD:
+            elif log_event_id == LOGEVENT_TODLO or log_event_id == LOGEVENT_TODHI:
                 await client.channel_report(personal_tod, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             elif log_event_id == LOGEVENT_GMOTD:
