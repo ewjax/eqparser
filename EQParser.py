@@ -166,14 +166,14 @@ class DiscordClient(commands.Bot):
 
             # convert the UTC to EDT (4 hours behind UTC), then represent it in the same format of an EQ timestamp
             edt_modifier = timedelta(hours=-4)
-            edt_datetime = utc_timestamp_datetime + edt_modifier
-            edt_eqformat_str = edt_datetime.strftime('[%a %b %d %H:%M:%S %Y]')
+            edt_timestamp_datetime = utc_timestamp_datetime + edt_modifier
+            edt_eqtimestamp_str = edt_timestamp_datetime.strftime('[%a %b %d %H:%M:%S %Y]')
 
             # send the second and third line of the report
             line = '```'
             line += f'Raw: {eq_log_line}'
             line += '\n'
-            line += f'EDT: {edt_eqformat_str}'
+            line += f'EDT: {edt_eqtimestamp_str}'
             line += '```'
             await channel.send(line)
 
