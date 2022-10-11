@@ -10,6 +10,7 @@ import _version
 import config
 import LogFile
 from util import starprint
+from util import SmartBuffer
 
 
 # define some ID constants for the derived classes
@@ -89,7 +90,7 @@ class EQParser(LogFile.LogFile):
             if log_event_id == LOGEVENT_VD or log_event_id == LOGEVENT_VT:
                 await client.channel_report(personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
                 await client.channel_report(personal_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line, everyone=True)
-                # await client.channel_report(snek_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line, everyone=True)
+                await client.channel_report(snek_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line, everyone=True)
 
             elif log_event_id == LOGEVENT_YAEL or log_event_id == LOGEVENT_DAIN or log_event_id == LOGEVENT_SEV or log_event_id == LOGEVENT_CT:
                 await client.channel_report(personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
@@ -156,13 +157,16 @@ class DiscordClient(commands.Bot):
         """
         channel = client.get_channel(channel_id)
         if channel:
-            # todo - do any needed de-duping
+
+            # accumulate all discord output into a SmartBuffer
+            sb = SmartBuffer()
 
             if everyone:
                 short_desc = '@everyone' + short_desc
 
             # send the first line of the report
-            await channel.send(f'{short_desc} (from: {charname})')
+            # await channel.send(f'{short_desc} (from: {charname})')
+            sb.add(f'{short_desc} (from: {charname})')
 
             # convert the UTC to EDT (4 hours behind UTC), then represent it in the same format of an EQ timestamp
             edt_modifier = timedelta(hours=-4)
@@ -175,7 +179,13 @@ class DiscordClient(commands.Bot):
             line += '\n'
             line += f'EDT: {edt_eqtimestamp_str}'
             line += '```'
-            await channel.send(line)
+            # await channel.send(line)
+            sb.add(line)
+
+            # send info from SmartBuffer to discord
+            buff_list = sb.get_bufflist()
+            for b in buff_list:
+                await channel.send(b)
 
 
 # create the global instance of the client that manages communication to the discord bot
