@@ -36,7 +36,7 @@ exe: libs
 exe.clean: libs.clean
 	rm -rfd build
 	#rm -rfd dist
-	rm dist/$(PACKAGE).exe
+	rm ./dist/$(PACKAGE)
 	rm $(PACKAGE).spec
 
 
