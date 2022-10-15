@@ -1,10 +1,12 @@
 
-PACKAGE=EQSysLogParser
+PACKAGE=EQParser
+PYTHON=python3
+
 
 ##############################################################################
 # do this while not in venv
 venv:
-	python -m venv .$(PACKAGE).venv
+	$(PYTHON) -m venv .$(PACKAGE).venv
 
 venv.clean:
 	rm -rfd .$(PACKAGE).venv
@@ -13,18 +15,18 @@ venv.clean:
 ##############################################################################
 # do these while in venv
 run: libs.quiet
-	python $(PACKAGE).py
+	$(PYTHON) $(PACKAGE).py
 
 
 # libs make targets ###########################
 libs: requirements.txt
-	pip install -r requirements.txt
+	pip3 install -r requirements.txt
 
 libs.quiet: requirements.txt
-	pip install -q -r requirements.txt
+	pip3 install -q -r requirements.txt
 
 libs.clean:
-	pip uninstall -r requirements.txt
+	pip3 uninstall -r requirements.txt
 
 
 # exe make targets ###########################
@@ -34,7 +36,7 @@ exe: libs
 exe.clean: libs.clean
 	rm -rfd build
 	#rm -rfd dist
-	rm dist/$(PACKAGE).exe
+	rm ./dist/$(PACKAGE)
 	rm $(PACKAGE).spec
 
 

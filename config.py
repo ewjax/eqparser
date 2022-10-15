@@ -38,50 +38,69 @@ def verify_settings() -> None:
     global config_data
     modified = False
 
-    # Everquest section
-    section = 'Everquest'
+    # RSysLog section
+    section = 'rsyslog'
     if not config_data.has_section(section):
         config_data.add_section(section)
         modified = True
 
-    if not config_data.has_option(section, 'base_directory'):
-        config_data.set(section, 'base_directory', 'c:\\everquest')
+    if not config_data.has_option(section, 'file_name'):
+        config_data.set(section, 'file_name', '/var/log/syslog')
         modified = True
 
-    if not config_data.has_option(section, 'logs_directory'):
-        config_data.set(section, 'logs_directory', '\\logs\\')
-        modified = True
-
-    if not config_data.has_option(section, 'heartbeat'):
-        config_data.set(section, 'heartbeat', '15')
-        modified = True
-
-    # screen positions section
-    section = 'ConsoleWindowPosition'
+    # discord section
+    section = 'Discord Bot'
     if not config_data.has_section(section):
         config_data.add_section(section)
         modified = True
 
-    if not config_data.has_option(section, 'x'):
-        config_data.set(section, 'x', '100')
+    if not config_data.has_option(section, 'bot_token'):
+        config_data.set(section, 'bot_token', 'your_bot_token_here')
         modified = True
 
-    if not config_data.has_option(section, 'y'):
-        config_data.set(section, 'y', '100')
+    if not config_data.has_option(section, 'bot_command_prefix'):
+        config_data.set(section, 'bot_command_prefix', '!')
         modified = True
 
-    if not config_data.has_option(section, 'width'):
-        config_data.set(section, 'width', '1200')
+    # personal section
+    section = 'Personal Discord Server'
+    if not config_data.has_section(section):
+        config_data.add_section(section)
         modified = True
 
-    if not config_data.has_option(section, 'height'):
-        config_data.set(section, 'height', '800')
+    if not config_data.has_option(section, 'pop'):
+        config_data.set(section, 'pop', 'pop channel id here')
+        modified = True
+
+    if not config_data.has_option(section, 'spawn'):
+        config_data.set(section, 'spawn', 'spawn channel id here')
+        modified = True
+
+    if not config_data.has_option(section, 'alert'):
+        config_data.set(section, 'alert', 'alert channel id here')
+        modified = True
+
+    if not config_data.has_option(section, 'tod'):
+        config_data.set(section, 'tod', 'tod channel id here')
+        modified = True
+
+    if not config_data.has_option(section, 'gmotd'):
+        config_data.set(section, 'gmotd', 'gmotd channel id here')
+        modified = True
+
+    # snek server section
+    section = 'Snek Discord Server'
+    if not config_data.has_section(section):
+        config_data.add_section(section)
+        modified = True
+
+    if not config_data.has_option(section, 'pop'):
+        config_data.set(section, 'pop', 'pop channel id here')
         modified = True
 
     # save the data
     if modified:
         save()
-        show()
 
 
 def save() -> None:

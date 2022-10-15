@@ -1,6 +1,7 @@
 import os
 import asyncio
 
+import config
 from util import starprint
 
 # allow for testing, by forcing the bot to read an old log logfile
@@ -65,8 +66,8 @@ class LogFile:
             self.set_parsing()
             return True
         except OSError as err:
-            starprint('OS error: {0}'.format(err))
-            starprint('Unable to open logfile name: [{}]'.format(filename))
+            starprint(f'OS error: {err}')
+            starprint(f'Unable to open logfile name: [{filename}]')
             return False
 
     def close(self) -> None:
@@ -116,21 +117,13 @@ class LogFile:
             # open the latest logfile
             else:
                 # open the latest logfile, and kick off the parsing process
-
-                # todo - generalize this for different hosts
-
-                # AWS VM
-                # logfile_name = '/var/log/remote.log'
-
-                # raspberry pi
-                logfile_name = '/var/log/rsyslog'
-
+                logfile_name = config.config_data.get('rsyslog', 'file_name')
                 rv = self.open(logfile_name)
 
             # if the log logfile was successfully opened, then initiate parsing
             if rv:
                 # status message
-                starprint('Now parsing logfile name: [{}]'.format(self.logfile_name))
+                starprint(f'Now parsing logfile name: [{self.logfile_name}]')
 
                 # create the asyncio coroutine and kick it off
                 asyncio.create_task(self.run())
