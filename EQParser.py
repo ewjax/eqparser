@@ -106,7 +106,8 @@ class EQParser(LogFile.LogFile):
                 await client.channel_report(self.personal_alert, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             elif log_event_id == LOGEVENT_RANDOM:
-                await client.channel_report(self.personal_random, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                # await client.channel_report(self.personal_random, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                pass
 
             elif log_event_id == LOGEVENT_GRATSS:
                 await client.channel_report(self.personal_gratss, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
