@@ -56,6 +56,9 @@ class EQParser(LogFile.LogFile):
         # pop channel for snek discord server
         self.snek_pop = config.config_data.getint('Snek Discord Server', 'pop')
 
+        # last GMOTD to avoid duplicates when swapping characters
+        self.last_gmotd = ''
+
     #
     # process each line
     async def process_line(self, line: str, printline: bool = False) -> None:
@@ -104,7 +107,10 @@ class EQParser(LogFile.LogFile):
                 await client.channel_report(self.personal_tod, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             elif log_event_id == LOGEVENT_GMOTD:
-                await client.channel_report(self.personal_gmotd, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                trunc_line = eq_log_line[27:]
+                if trunc_line != self.last_gmotd:
+                    self.last_gmotd = trunc_line
+                    await client.channel_report(self.personal_gmotd, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             else:
                 await client.channel_report(self.personal_general, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
@@ -160,6 +166,9 @@ class DiscordClient(commands.Bot):
         channel = client.get_channel(channel_id)
         if channel:
 
+            # add a small signature suffix to indicate which rsyslog server is sending the message to discord
+            # 4 = FourBee
+            # v = AWS virtual machine
             hostname = socket.gethostname().lower()
             if hostname == 'fourbee':
                 suffix = '[4]'
