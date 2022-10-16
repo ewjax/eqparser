@@ -52,6 +52,8 @@ class EQParser(LogFile.LogFile):
         self.personal_alert = config.config_data.getint('Personal Discord Server', 'alert')
         self.personal_tod = config.config_data.getint('Personal Discord Server', 'tod')
         self.personal_gmotd = config.config_data.getint('Personal Discord Server', 'gmotd')
+        self.personal_random = config.config_data.getint('Personal Discord Server', 'random')
+        self.personal_gratss = config.config_data.getint('Personal Discord Server', 'gratss')
 
         # pop channel for snek discord server
         self.snek_pop = config.config_data.getint('Snek Discord Server', 'pop')
@@ -100,8 +102,14 @@ class EQParser(LogFile.LogFile):
             elif log_event_id == LOGEVENT_YAEL or log_event_id == LOGEVENT_DAIN or log_event_id == LOGEVENT_SEV or log_event_id == LOGEVENT_CT:
                 await client.channel_report(self.personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
-            elif log_event_id == LOGEVENT_FTE or log_event_id == LOGEVENT_QUAKE or log_event_id == LOGEVENT_RANDOM or log_event_id == LOGEVENT_GRATSS:
+            elif log_event_id == LOGEVENT_FTE or log_event_id == LOGEVENT_QUAKE:
                 await client.channel_report(self.personal_alert, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+
+            elif log_event_id == LOGEVENT_RANDOM:
+                await client.channel_report(self.personal_random, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+
+            elif log_event_id == LOGEVENT_GRATSS:
+                await client.channel_report(self.personal_gratss, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             elif log_event_id == LOGEVENT_TODLO or log_event_id == LOGEVENT_TODHI:
                 await client.channel_report(self.personal_tod, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
