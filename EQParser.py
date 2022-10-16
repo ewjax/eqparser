@@ -1,6 +1,7 @@
 
 
 import asyncio
+import socket
 import re
 from datetime import datetime, timedelta
 import discord
@@ -44,6 +45,17 @@ class EQParser(LogFile.LogFile):
         # force global data to load from ini logfile
         config.load()
 
+        # various channel id's from personal discord server
+        self.personal_general = config.config_data.getint('Personal Discord Server', 'general')
+        self.personal_pop = config.config_data.getint('Personal Discord Server', 'pop')
+        self.personal_spawn = config.config_data.getint('Personal Discord Server', 'spawn')
+        self.personal_alert = config.config_data.getint('Personal Discord Server', 'alert')
+        self.personal_tod = config.config_data.getint('Personal Discord Server', 'tod')
+        self.personal_gmotd = config.config_data.getint('Personal Discord Server', 'gmotd')
+
+        # pop channel for snek discord server
+        self.snek_pop = config.config_data.getint('Snek Discord Server', 'pop')
+
     #
     # process each line
     async def process_line(self, line: str, printline: bool = False) -> None:
@@ -75,37 +87,27 @@ class EQParser(LogFile.LogFile):
             # do something useful with the collected data
             # print(f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
 
-            # various channel id's from personal discord server
-            personal_general = config.config_data.getint('Personal Discord Server', 'general')
-            personal_pop = config.config_data.getint('Personal Discord Server', 'pop')
-            personal_spawn = config.config_data.getint('Personal Discord Server', 'spawn')
-            personal_alert = config.config_data.getint('Personal Discord Server', 'alert')
-            personal_tod = config.config_data.getint('Personal Discord Server', 'tod')
-            personal_gmotd = config.config_data.getint('Personal Discord Server', 'gmotd')
-
-            # pop channel for snek discord server
-            snek_pop = config.config_data.getint('Snek Discord Server', 'pop')
 
             # dispatch the parsed log events to the appropriate channels
             if log_event_id == LOGEVENT_VD or log_event_id == LOGEVENT_VT:
-                await client.channel_report(personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
-                await client.channel_report(personal_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line, everyone=True)
-                await client.channel_report(snek_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line, everyone=True)
+                await client.channel_report(self.personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                await client.channel_report(self.personal_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line, everyone=True)
+                await client.channel_report(self.snek_pop, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line, everyone=True)
 
             elif log_event_id == LOGEVENT_YAEL or log_event_id == LOGEVENT_DAIN or log_event_id == LOGEVENT_SEV or log_event_id == LOGEVENT_CT:
-                await client.channel_report(personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                await client.channel_report(self.personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             elif log_event_id == LOGEVENT_FTE or log_event_id == LOGEVENT_QUAKE or log_event_id == LOGEVENT_RANDOM or log_event_id == LOGEVENT_GRATSS:
-                await client.channel_report(personal_alert, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                await client.channel_report(self.personal_alert, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             elif log_event_id == LOGEVENT_TODLO or log_event_id == LOGEVENT_TODHI:
-                await client.channel_report(personal_tod, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                await client.channel_report(self.personal_tod, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             elif log_event_id == LOGEVENT_GMOTD:
-                await client.channel_report(personal_gmotd, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                await client.channel_report(self.personal_gmotd, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             else:
-                await client.channel_report(personal_general, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                await client.channel_report(self.personal_general, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
 
 # create the global instance of the parser class
@@ -158,6 +160,12 @@ class DiscordClient(commands.Bot):
         channel = client.get_channel(channel_id)
         if channel:
 
+            hostname = socket.gethostname().lower()
+            if hostname == 'fourbee':
+                suffix = '[4]'
+            else:
+                suffix = '[v]'
+
             # accumulate all discord output into a SmartBuffer
             sb = SmartBuffer()
 
@@ -166,7 +174,7 @@ class DiscordClient(commands.Bot):
 
             # send the first line of the report
             # await channel.send(f'{short_desc} (from: {charname})')
-            sb.add(f'{short_desc} (from: {charname})')
+            sb.add(f'{short_desc} (from: {charname}) {suffix}')
 
             # convert the UTC to EDT (4 hours behind UTC), then represent it in the same format of an EQ timestamp
             edt_modifier = timedelta(hours=-4)
