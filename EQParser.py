@@ -92,7 +92,6 @@ class EQParser(LogFile.LogFile):
             # do something useful with the collected data
             # print(f'{charname} --- {log_event_id} --- {short_desc} --- {utc_timestamp_datetime} --- {eq_log_line}')
 
-
             # dispatch the parsed log events to the appropriate channels
             if log_event_id == LOGEVENT_VD or log_event_id == LOGEVENT_VT:
                 await client.channel_report(self.personal_spawn, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
@@ -147,6 +146,15 @@ class DiscordClient(commands.Bot):
     def __init__(self, my_prefix):
         super().__init__(command_prefix=my_prefix)
 
+        # add a small signature suffix to indicate which rsyslog server is sending the message to discord
+        # 4 = FourBee
+        # v = AWS virtual machine
+        hostname = socket.gethostname().lower()
+        if hostname == 'fourbee':
+            self.suffix = '[4]'
+        else:
+            self.suffix = '[v]'
+
     #
     # send output to indicated channel number
     async def channel_report(self, channel_id: int,
@@ -175,15 +183,6 @@ class DiscordClient(commands.Bot):
         channel = client.get_channel(channel_id)
         if channel:
 
-            # add a small signature suffix to indicate which rsyslog server is sending the message to discord
-            # 4 = FourBee
-            # v = AWS virtual machine
-            hostname = socket.gethostname().lower()
-            if hostname == 'fourbee':
-                suffix = '[4]'
-            else:
-                suffix = '[v]'
-
             # accumulate all discord output into a SmartBuffer
             sb = SmartBuffer()
 
@@ -192,7 +191,7 @@ class DiscordClient(commands.Bot):
 
             # send the first line of the report
             # await channel.send(f'{short_desc} (from: {charname})')
-            sb.add(f'{short_desc} (from: {charname}) {suffix}')
+            sb.add(f'{short_desc} (from: {charname}) {client.suffix}')
 
             # convert the UTC to EDT (4 hours behind UTC), then represent it in the same format of an EQ timestamp
             edt_modifier = timedelta(hours=-4)
@@ -242,7 +241,7 @@ async def on_message(message):
     author = message.author
     content = message.content
     channel = message.channel
-    starprint(f'Content received: [{content}] from [{author}] in channel [{channel}]')
+    starprint(f'{client.suffix} Content received: [{content}] from [{author}] in channel [{channel}]')
     await client.process_commands(message)
 
 
@@ -250,7 +249,7 @@ async def on_message(message):
 @client.command()
 async def ping(ctx):
     starprint(f'Command received: [{ctx.message.content}] from [{ctx.message.author}]')
-    await ctx.send(f'Latency = {round(client.latency * 1000)} ms')
+    await ctx.send(f'Latency = {round(client.latency * 1000)} ms {client.suffix}')
 
 
 # status command
@@ -258,12 +257,23 @@ async def ping(ctx):
 async def status(ctx):
     starprint(f'Command received: [{ctx.message.content}] from [{ctx.message.author}]')
 
-    await ctx.send(f'EQParser {_version.__VERSION__}')
+    await ctx.send(f'EQParser {_version.__VERSION__} {client.suffix}')
 
     if the_parser.is_parsing():
-        await ctx.send(f'Now parsing logfile name: [{the_parser.logfile_name}]')
+        await ctx.send(f'Now parsing logfile name: [{the_parser.logfile_name}] {client.suffix}')
     else:
-        await ctx.send('Not currently parsing')
+        await ctx.send(f'Not currently parsing {client.suffix}')
+
+
+# firedrill command
+# test the ability to send a message to the #pop channel
+@client.command(aliases=['fd', '911'])
+async def firedrill(ctx):
+    starprint(f'Command received: [{ctx.message.content}] from [{ctx.message.author}]')
+
+    channel_id = the_parser.snek_pop
+    channel = client.get_channel(channel_id)
+    await channel.send(f'This is a test.  This is only a test. {client.suffix}')
 
 
 #################################################################################################
