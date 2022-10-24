@@ -1,6 +1,7 @@
 
 
 import asyncio
+
 import socket
 import re
 from datetime import datetime, timedelta
@@ -31,6 +32,7 @@ LOGEVENT_GRATSS: int = 12
 LOGEVENT_TODLO: int = 13
 LOGEVENT_GMOTD: int = 14
 LOGEVENT_TODHI: int = 15
+LOGEVENT_PING: int = 16
 
 
 #################################################################################################
@@ -56,6 +58,7 @@ class EQParser(LogFile.LogFile):
         self.personal_gratss = config.config_data.getint('Personal Discord Server', 'gratss')
 
         # pop channel for snek discord server
+        self.snek_general = config.config_data.getint('Snek Discord Server', 'general')
         self.snek_pop = config.config_data.getint('Snek Discord Server', 'pop')
 
         # last GMOTD to avoid duplicates when swapping characters
@@ -65,7 +68,8 @@ class EQParser(LogFile.LogFile):
     # process each line
     async def process_line(self, line: str, printline: bool = False) -> None:
         # call parent to edit every line, the default behavior
-        await super().process_line(line, printline)
+        # await super().process_line(line, printline)
+        await super().process_line(line, True)
 
         # parsing landmarks
         field_separator = '\\|'
@@ -119,6 +123,10 @@ class EQParser(LogFile.LogFile):
                 if trunc_line != self.last_gmotd:
                     self.last_gmotd = trunc_line
                     await client.channel_report(self.personal_gmotd, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+
+            elif log_event_id == LOGEVENT_PING:
+                short_desc = f'Latency = {round(client.latency * 1000)} ms {client.suffix}'
+                await client.channel_report(self.personal_general, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             else:
                 await client.channel_report(self.personal_general, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)

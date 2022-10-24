@@ -68,6 +68,18 @@ def verify_settings() -> None:
         config_data.add_section(section)
         modified = True
 
+    if not config_data.has_option(section, 'general'):
+        config_data.set(section, 'general', 'general channel id here')
+        modified = True
+
+    if not config_data.has_option(section, 'random'):
+        config_data.set(section, 'random', 'random channel id here')
+        modified = True
+
+    if not config_data.has_option(section, 'gratss'):
+        config_data.set(section, 'gratss', 'gratss channel id here')
+        modified = True
+
     if not config_data.has_option(section, 'pop'):
         config_data.set(section, 'pop', 'pop channel id here')
         modified = True
@@ -92,6 +104,10 @@ def verify_settings() -> None:
     section = 'Snek Discord Server'
     if not config_data.has_section(section):
         config_data.add_section(section)
+        modified = True
+
+    if not config_data.has_option(section, 'general'):
+        config_data.set(section, 'general', 'general channel id here')
         modified = True
 
     if not config_data.has_option(section, 'pop'):
