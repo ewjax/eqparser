@@ -125,8 +125,9 @@ class EQParser(LogFile.LogFile):
                     await client.channel_report(self.personal_gmotd, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             elif log_event_id == LOGEVENT_PING:
-                short_desc = f'Latency = {round(client.latency * 1000)} ms {client.suffix}'
+                short_desc = f'Latency = {round(client.latency * 1000)} ms'
                 await client.channel_report(self.personal_general, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
+                await client.channel_report(self.snek_general, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
 
             else:
                 await client.channel_report(self.personal_general, charname, log_event_id, short_desc, utc_timestamp_datetime, eq_log_line)
